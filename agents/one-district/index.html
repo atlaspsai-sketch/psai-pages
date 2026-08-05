@@ -143,7 +143,7 @@
   <div class="imgcard"><img src="hero.jpg" alt="O1NE District masterplan render — six towers over the retail podium beside the Autodrome" loading="lazy"><div class="cap">The full district: six Grade A towers over an integrated mall podium, beside the Autodrome. DAWN is tower one.</div></div>
   <div class="keys">
     <div><b>AED 6bn commercial masterplan</b> — 6 Grade A office towers + integrated retail mall + healthcare. DAWN is the first release</div>
-    <div><b>70 office units · 1,963–5,479 sqft</b> — six per typical floor, combinable up to full floorplates</div>
+    <div><b>70 office units · 1,963–5,479 sqft</b> — floors of 3–6 suites, combinable up to full floorplates</div>
     <div><b>Sold shell &amp; core</b> — buyer fits out; layouts shown in renders are indicative only</div>
     <div><b>50/50 interest-free</b> — 10% books it, only 50% paid before keys at Q1 2030</div>
     <div><b>Avenew × KORA JV</b> — KORA is the Apparel Group family's developer; Avenew also signed by Marriott (St. Regis) &amp; Hilton (Waldorf Astoria)</div>
@@ -153,9 +153,10 @@
 
 <section class="base" id="units"><div class="wrap">
   <h2><span class="n">02</span> Offices &amp; Sizes</h2>
-  <div class="price-card"><div class="u">Typical floors · L4–L16</div><div class="p">6<small>units / floor</small></div><div class="s">1,963 – 2,604 sqft</div><div class="d">Six suites per floor (1,963 / 2,122 / 2,224 / 2,477 / 2,602 / 2,604 sqft; some upper floors run to 2,999). No balconies — pure efficient office area.</div></div>
-  <div class="price-card"><div class="u">Level 3 terrace offices</div><div class="p">4<small>units only</small></div><div class="s">3,877 – 5,479 sqft total</div><div class="d">Office 2,089–2,824 sqft + private podium terraces of 1,053–2,889 sqft. The rarest product in the tower — genuinely four of them.</div></div>
-  <div class="price-card"><div class="u">Full floors</div><div class="p">≈14,000<small>sqft</small></div><div class="s">combinable</div><div class="d">Flexible layouts on an efficient structural grid — all six suites on a floor combine for a single-tenant HQ.</div></div>
+  <div class="price-card"><div class="u">Compact &amp; mid suites</div><div class="p">5–6<small>per floor</small></div><div class="s">1,963 – 2,999 sqft</div><div class="d">The tower's core stock: L4/L5/L8 run 1,963–2,604; L9 and L14–L16 run 1,963–2,999; L6/L7 hold five suites incl. a 3,182.</div></div>
+  <div class="price-card"><div class="u">Large suites · L10–L13</div><div class="p">3–4<small>per floor</small></div><div class="s">2,842 – 4,765 sqft</div><div class="d">Mid-tower floors are cut into just three or four big suites (L10/L11: 3,755 / 3,870 / 4,765; L12/L13: 2,842–4,171) — the move-up product for 30–60-desk firms.</div></div>
+  <div class="price-card"><div class="u">Terrace offices</div><div class="p">8<small>in the tower</small></div><div class="s">3,829 – 5,479 sqft total</div><div class="d">Four on Level 3 over the podium (terraces 1,053–2,889 sqft) plus setback units 601, 1001, 1003 and 1202 with terraces of ~1,000–1,253 sqft. Genuinely scarce.</div></div>
+  <div class="price-card"><div class="u">Full floors</div><div class="p">≈12–14k<small>sqft</small></div><div class="s">combinable</div><div class="d">Flexible layouts on an efficient structural grid — all suites on a floor combine for a single-tenant HQ.</div></div>
   <div class="imgcard"><img src="fp-typ.jpg" alt="Typical floor plan — six office suites around the central core" loading="lazy"><div class="cap">Typical floor: six suites around the core, race track to the east. Delivered shell &amp; core.</div></div>
   <div class="imgcard"><img src="fp-l3.jpg" alt="Level 3 floor plan with private terraces" loading="lazy"><div class="cap">Level 3: the four terrace offices over the podium.</div></div>
 </div></section>
@@ -170,7 +171,7 @@
   </div>
   <div class="note" style="margin-top:0">+ 4% DLD and AED 3,500 admin at booking · installments are fixed dates (below), not construction-linked · interest-free · no post-handover component.</div>
 
-  <div class="pick"><b>Pick a suite size, enter the quoted price</b> — the page builds the dated schedule:</div>
+  <div class="pick"><b>Pick a suite (or type any size), enter the quoted price</b> — the page builds the dated schedule:</div>
   <div class="units">
     <button data-u="t06" class="on">1,963<small>sqft</small></button>
     <button data-u="t04">2,122<small>sqft</small></button>
@@ -178,8 +179,9 @@
     <button data-u="t01">2,477<small>sqft</small></button>
     <button data-u="t05">2,602<small>sqft</small></button>
     <button data-u="t02">2,604<small>sqft</small></button>
-    <button data-u="l3">L3<small>terrace</small></button>
+    <button data-u="other">Other<small>terrace / large</small></button>
   </div>
+  <div class="pricein"><label>Size</label><input id="size" type="text" inputmode="numeric" autocomplete="off" value="1,963" placeholder="unit sqft"><span>sqft</span></div>
   <div class="pricein"><label>Unit price</label><input id="price" type="text" inputmode="numeric" autocomplete="off" placeholder="from the live price list"><span>AED</span></div>
   <div class="bk" id="bk"></div>
   <div class="sumline">
@@ -240,7 +242,7 @@
     t01:{s:2477,l:'Suite 2,477 sqft',img:'fp-t01.jpg'},
     t05:{s:2602,l:'Suite 2,602 sqft',img:'fp-t05.jpg'},
     t02:{s:2604,l:'Suite 2,604 sqft',img:'fp-t02.jpg'},
-    l3:{s:0,l:'Level 3 terrace office · 3,877–5,479 sqft total',img:'fp-l3.jpg'}
+    other:{s:0,l:'Terrace / large suite — type the exact size',img:'fp-l3.jpg'}
   };
   var SCHED=[
     ['Booking — 10%',0.10,''],
@@ -256,12 +258,13 @@
   ];
   var cur='t06';
   function fmt(n){return 'AED '+Math.round(n).toLocaleString('en-US');}
-  function getPrice(){
-    var v=document.getElementById('price').value.replace(/[^0-9]/g,'');
+  function num(id){
+    var v=document.getElementById(id).value.replace(/[^0-9]/g,'');
     return v?parseInt(v,10):0;
   }
+  function getPrice(){return num('price');}
   function render(){
-    var P=getPrice(), u=UNITS[cur], h='';
+    var P=getPrice(), S=num('size'), h='';
     for(var i=0;i<SCHED.length;i++){
       var amt;
       if(!P){amt='—';}
@@ -272,11 +275,14 @@
     }
     document.getElementById('bk').innerHTML=h;
     document.getElementById('s-book').textContent=P?fmt(P*0.14+3500):'—';
-    document.getElementById('s-psf').textContent=(P&&u.s)?'AED '+Math.round(P/u.s).toLocaleString('en-US'):'—';
+    document.getElementById('s-psf').textContent=(P&&S)?'AED '+Math.round(P/S).toLocaleString('en-US'):'—';
   }
   function pick(k){
     cur=k;
     var u=UNITS[k];
+    var sz=document.getElementById('size');
+    sz.value=u.s?u.s.toLocaleString('en-US'):'';
+    if(!u.s)sz.focus();
     document.getElementById('fp-img').src=u.img;
     document.getElementById('fp-label').textContent=u.l+' — floor plan';
     var bk=document.getElementById('bk');bk.classList.remove('pop');void bk.offsetWidth;bk.classList.add('pop');
@@ -288,12 +294,15 @@
   btns.forEach(function(b){b.addEventListener('click',function(){
     btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');pick(b.dataset.u);
   })});
-  var inp=document.getElementById('price');
-  inp.addEventListener('input',function(){
-    var v=inp.value.replace(/[^0-9]/g,'');
-    inp.value=v?parseInt(v,10).toLocaleString('en-US'):'';
-    render();
+  ['price','size'].forEach(function(id){
+    var el=document.getElementById(id);
+    el.addEventListener('input',function(){
+      var v=el.value.replace(/[^0-9]/g,'');
+      el.value=v?parseInt(v,10).toLocaleString('en-US'):'';
+      render();
+    });
   });
+  var inp=document.getElementById('price');
   inp.addEventListener('change',function(){
     if(window.gtag&&getPrice())gtag('event','price_input',{unit:cur,value:getPrice()});
   });

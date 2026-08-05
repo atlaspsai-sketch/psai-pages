@@ -23,7 +23,7 @@
   .nav .wrap{display:flex;gap:8px;overflow-x:auto;padding:10px 20px;scrollbar-width:none}
   .nav .wrap::-webkit-scrollbar{display:none}
   .nav a{flex:0 0 auto;font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--mut);text-decoration:none;padding:7px 14px;border:1px solid rgba(255,255,255,.14);border-radius:999px;white-space:nowrap}
-  .nav a:active{background:var(--panel)}
+  .nav a:active{background:var(--panel)}.nav a.on{background:var(--or);border-color:var(--or);color:#fff}
   /* hero */
   .hero{padding:34px 0 26px}
   h1{font-size:32px;font-weight:800;letter-spacing:-.01em;color:#fff;line-height:1.15}
@@ -32,7 +32,7 @@
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
   .chips span{font-size:13px;font-weight:600;color:#fff;background:var(--panel);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:7px 13px}
   /* bands */
-  section{padding:30px 0 36px}
+  section{padding:30px 0 44px;display:none;scroll-margin-top:110px}section.active{display:block;min-height:60vh}
   section.alt{background:var(--band);border-top:1px solid rgba(255,255,255,.06)}
   section.base{border-top:1px solid rgba(255,255,255,.06)}
   h2{display:flex;align-items:center;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--or2);font-weight:700;margin-bottom:18px}
@@ -100,7 +100,7 @@
   <div class="tag">Agent Reference<br>Aug 2026 · Internal</div>
 </div></div>
 <nav class="nav"><div class="wrap">
-  <a href="#key">Key points</a><a href="#prices">Prices</a><a href="#plan">Payment plan</a><a href="#sell">Selling points</a><a href="#loc">Location</a>
+  <a href="#key" class="on">Key points</a><a href="#prices">Prices</a><a href="#plan">Payment plan</a><a href="#sell">Selling points</a><a href="#loc">Location</a>
 </div></nav>
 
 <div class="wrap hero">
@@ -224,6 +224,29 @@
     btns.forEach(function(x){x.classList.remove('on')});b.classList.add('on');render(b.dataset.u);
   })});
   render('studio');
+})();
+</script>
+
+<script>
+(function(){
+  var ids=['key','prices','plan','sell','loc'];
+  var tabs=document.querySelectorAll('.nav a');
+  function show(id, jump){
+    if(ids.indexOf(id)<0) id='key';
+    ids.forEach(function(s){document.getElementById(s).classList.toggle('active', s===id)});
+    tabs.forEach(function(a){a.classList.toggle('on', a.getAttribute('href')==='#'+id)});
+    if(jump){
+      var nav=document.querySelector('.nav');
+      var y=nav.offsetTop - document.querySelector('.top').offsetHeight;
+      window.scrollTo({top:Math.max(0,nav.getBoundingClientRect().top+window.scrollY-58),behavior:'auto'});
+      history.replaceState(null,'','#'+id);
+      if(window.gtag)gtag('event','tab_view',{tab:id});
+    }
+  }
+  tabs.forEach(function(a){a.addEventListener('click',function(e){
+    e.preventDefault(); show(a.getAttribute('href').slice(1), true);
+  })});
+  show((location.hash||'#key').slice(1), false);
 })();
 </script>
 </body></html>

@@ -187,7 +187,7 @@
       <input type="text" id="ownerId" autocomplete="off">
     </div>
     <div class="field">
-      <label for="ownerEmail">Email address <span class="opt">(optional)</span></label>
+      <label for="ownerEmail">Email address</label>
       <input type="email" id="ownerEmail" autocomplete="off" inputmode="email">
     </div>
   </section>
@@ -217,7 +217,7 @@
 (function () {
   var FIELDS = ['propertyName','propertyType','unitNo','furnished','deedNo','community','plotNo',
                 'purpose','rentalPrice','exclusive','validity','nocDate','ownerName','ownerId','ownerEmail','agentName'];
-  var REQUIRED = ['propertyName','unitNo','ownerName'];
+  var REQUIRED = ['propertyName','unitNo','ownerName','ownerId','ownerEmail'];
   var $ = function (id) { return document.getElementById(id); };
 
   var today = new Date();

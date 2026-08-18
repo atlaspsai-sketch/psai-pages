@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>NOC for Marketing · PSI</title>
+<style>
+  :root {
+    --purple: #372B4F;
+    --orange: #D45E30;
+    --ink: #2b2438;
+    --muted: #7a7288;
+    --line: #e3ddd4;
+    --paper: #f6f4f0;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 110px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 20px 16px 0; }
+  header {
+    display: flex; align-items: center; gap: 14px;
+    padding: 6px 0 18px;
+  }
+  header img { height: 52px; width: auto; }
+  header .t h1 { font-size: 1.05rem; color: var(--purple); line-height: 1.25; }
+  header .t p { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+  .note {
+    background: #fdf1ea; border: 1px solid #f0cdba; color: #8a4322;
+    border-radius: 10px; padding: 10px 12px; font-size: .82rem; margin-bottom: 18px;
+  }
+  section.card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 16px; margin-bottom: 16px;
+  }
+  section.card h2 {
+    font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--orange); margin-bottom: 14px;
+  }
+  .field { margin-bottom: 14px; }
+  .field:last-child { margin-bottom: 2px; }
+  label { display: block; font-size: .82rem; font-weight: 600; color: var(--purple); margin-bottom: 5px; }
+  label .opt { font-weight: 400; color: var(--muted); }
+  input[type="text"], input[type="email"], input[type="date"], select {
+    width: 100%; font-size: 1rem; color: var(--ink);
+    padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px;
+    background: #fbfaf8; appearance: none; -webkit-appearance: none;
+  }
+  input:focus, select:focus { outline: 2px solid var(--purple); outline-offset: 0; border-color: var(--purple); background: #fff; }
+  .selwrap { position: relative; }
+  .selwrap::after {
+    content: ""; position: absolute; right: 14px; top: 50%; margin-top: -3px;
+    border-left: 5px solid transparent; border-right: 5px solid transparent;
+    border-top: 6px solid var(--muted); pointer-events: none;
+  }
+  .suffix { font-size: .78rem; color: var(--muted); margin-top: 5px; }
+  .invalid { border-color: #c43c1f !important; background: #fdf0ec !important; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 460px) { .row2 { grid-template-columns: 1fr; gap: 0; } }
+  .bar {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: rgba(246,244,240,.92); backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line); padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+  }
+  .bar .inner { max-width: 640px; margin: 0 auto; display: flex; gap: 10px; }
+  button {
+    font-size: 1rem; font-weight: 700; border-radius: 12px; border: 0; cursor: pointer;
+    padding: 14px 16px; -webkit-tap-highlight-color: transparent;
+  }
+  #download { flex: 1; background: var(--purple); color: #fff; }
+  #download:active { background: #2a2140; }
+  #download[disabled] { opacity: .6; }
+  #clear { background: #fff; color: var(--muted); border: 1px solid var(--line); }
+  .err { color: #c43c1f; font-size: .8rem; margin-top: 8px; display: none; text-align: center; }
+  footer { text-align: center; font-size: .72rem; color: var(--muted); padding: 8px 0 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="psi-logo.png" alt="PSI — Property Shop Investment">
+    <div class="t">
+      <h1>No Objection Certificate for Marketing</h1>
+      <p>Fill in the details, then download the ready-to-sign PDF on PSI letterhead.</p>
+    </div>
+  </header>
+
+  <div class="note">Nothing is uploaded — the PDF is created on your phone. Signature lines stay blank on the PDF so the owner and agent can sign it.</div>
+
+  <section class="card">
+    <h2>Property Details</h2>
+    <div class="field">
+      <label for="propertyName">Property Name</label>
+      <input type="text" id="propertyName" autocomplete="off" placeholder="e.g. Marina Gate Tower 1">
+    </div>
+    <div class="row2">
+      <div class="field">
+        <label for="propertyType">Property Type</label>
+        <div class="selwrap"><select id="propertyType">
+          <option value="">Select…</option>
+          <option>Apartment</option>
+          <option>Villa</option>
+          <option>Townhouse</option>
+          <option>Shop</option>
+          <option>Office</option>
+          <option>Plot</option>
+        </select></div>
+      </div>
+      <div class="field">
+        <label for="unitNo">Unit No.</label>
+        <input type="text" id="unitNo" autocomplete="off" placeholder="e.g. 2104">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field">
+        <label for="furnished">Furnished or Unfurnished</label>
+        <div class="selwrap"><select id="furnished">
+          <option value="">Select…</option>
+          <option>Furnished</option>
+          <option>Unfurnished</option>
+        </select></div>
+      </div>
+      <div class="field">
+        <label for="deedNo">Oqood / Title Deed No.</label>
+        <input type="text" id="deedNo" autocomplete="off">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field">
+        <label for="community">Community</label>
+        <input type="text" id="community" autocomplete="off" placeholder="e.g. Dubai Marina">
+      </div>
+      <div class="field">
+        <label for="plotNo">Plot / Municipality No.</label>
+        <input type="text" id="plotNo" autocomplete="off">
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>NOC Terms</h2>
+    <div class="row2">
+      <div class="field">
+        <label for="purpose">NOC Purpose</label>
+        <input type="text" id="purpose" value="Rent" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="rentalPrice">Rental Price</label>
+        <input type="text" id="rentalPrice" autocomplete="off" placeholder="e.g. AED 120,000 / year">
+      </div>
+    </div>
+    <div class="row2">
+      <div class="field">
+        <label for="exclusive">Exclusive or Non-exclusive</label>
+        <div class="selwrap"><select id="exclusive">
+          <option value="">Select…</option>
+          <option>Exclusive</option>
+          <option>Non-exclusive</option>
+        </select></div>
+      </div>
+      <div class="field">
+        <label for="validity">NOC Validity</label>
+        <input type="text" id="validity" autocomplete="off" placeholder="e.g. 3 months">
+        <div class="suffix">…from the date of signing</div>
+      </div>
+    </div>
+    <div class="field">
+      <label for="nocDate">Date</label>
+      <input type="date" id="nocDate">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Owner&rsquo;s Details</h2>
+    <div class="field">
+      <label for="ownerName">Name</label>
+      <input type="text" id="ownerName" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="ownerId">Passport / Emirates ID No.</label>
+      <input type="text" id="ownerId" autocomplete="off">
+    </div>
+    <div class="field">
+      <label for="ownerEmail">Email address <span class="opt">(optional)</span></label>
+      <input type="email" id="ownerEmail" autocomplete="off" inputmode="email">
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Agent</h2>
+    <div class="field">
+      <label for="agentName">Agent Name</label>
+      <input type="text" id="agentName" autocomplete="off" placeholder="Your name — remembered on this phone">
+    </div>
+  </section>
+
+  <footer>PSI Real Estate LLC · Office Registration No. 22382</footer>
+</div>
+
+<div class="bar">
+  <div class="inner">
+    <button id="clear" type="button">New form</button>
+    <button id="download" type="button">Download PDF</button>
+  </div>
+  <div class="err" id="err">Please fill the highlighted fields.</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+'use strict';
+(function () {
+  var FIELDS = ['propertyName','propertyType','unitNo','furnished','deedNo','community','plotNo',
+                'purpose','rentalPrice','exclusive','validity','nocDate','ownerName','ownerId','ownerEmail','agentName'];
+  var REQUIRED = ['propertyName','unitNo','ownerName'];
+  var $ = function (id) { return document.getElementById(id); };
+
+  var today = new Date();
+  $('nocDate').value = today.getFullYear() + '-' +
+    String(today.getMonth() + 1).padStart(2, '0') + '-' +
+    String(today.getDate()).padStart(2, '0');
+
+  try {
+    var saved = localStorage.getItem('psi_noc_agent');
+    if (saved) $('agentName').value = saved;
+  } catch (e) {}
+  $('agentName').addEventListener('change', function () {
+    try { localStorage.setItem('psi_noc_agent', $('agentName').value.trim()); } catch (e) {}
+  });
+
+  $('clear').addEventListener('click', function () {
+    FIELDS.forEach(function (id) {
+      if (id === 'agentName' || id === 'nocDate') return;
+      $(id).value = id === 'purpose' ? 'Rent' : '';
+      $(id).classList.remove('invalid');
+    });
+    $('err').style.display = 'none';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  var letterhead = new Image();
+  letterhead.src = 'letterhead.jpg';
+
+  function fmtDate(iso) {
+    if (!iso) return '';
+    var p = iso.split('-');
+    return p[2] + '/' + p[1] + '/' + p[0];
+  }
+
+  function val(id) { return $(id).value.trim(); }
+
+  $('download').addEventListener('click', function () {
+    var missing = REQUIRED.filter(function (id) { return !val(id); });
+    FIELDS.forEach(function (id) { $(id).classList.remove('invalid'); });
+    if (missing.length) {
+      missing.forEach(function (id) { $(id).classList.add('invalid'); });
+      $('err').style.display = 'block';
+      $(missing[0]).scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    $('err').style.display = 'none';
+
+    if (!window.jspdf || !letterhead.complete || !letterhead.naturalWidth) {
+      alert('Still loading — check your connection and try again in a second.');
+      return;
+    }
+
+    var btn = $('download');
+    btn.disabled = true;
+
+    try {
+      var doc = new window.jspdf.jsPDF({ unit: 'mm', format: 'a4' });
+      var W = 210, L = 26.5, R = 187.5, CW = R - L;
+
+      doc.addImage(letterhead, 'JPEG', 0, 0, 210, 297);
+      doc.setTextColor(43, 36, 56);
+
+      doc.setFont('helvetica', 'bold'); doc.setFontSize(11);
+      doc.text('Date:', L, 37);
+      doc.setFont('helvetica', 'normal');
+      doc.text(fmtDate(val('nocDate')), L + 12, 37);
+
+      doc.setFont('helvetica', 'bold'); doc.setFontSize(12);
+      var title = 'NO OBJECTION CERTIFICATE FOR MARKETING';
+      doc.text(title, W / 2, 45, { align: 'center' });
+      var tw = doc.getTextWidth(title);
+      doc.setLineWidth(0.4); doc.line(W / 2 - tw / 2, 46.2, W / 2 + tw / 2, 46.2);
+
+      doc.setFont('helvetica', 'normal'); doc.setFontSize(10.5);
+      doc.text(doc.splitTextToSize(
+        'I, the undersigned, hereby declare that I am the legal owner of the following property and have full authority to lease and market the same.',
+        CW), L, 55);
+
+      doc.setFont('helvetica', 'bold');
+      doc.text('Property Details:', L, 70);
+
+      var rows = [
+        ['Property Name', val('propertyName')],
+        ['Property Type (Villa/TH/Apt/Shop/Office/Plot)', val('propertyType')],
+        ['Unit No.', val('unitNo')],
+        ['Furnished or Unfurnished', val('furnished')],
+        ['Oqood/Title Deed No.', val('deedNo')],
+        ['Community', val('community')],
+        ['Plot/Municipality No.', val('plotNo')],
+        ['NOC Purpose', val('purpose')],
+        ['Rental Price', val('rentalPrice')],
+        ['Exclusive or non-exclusive', val('exclusive')],
+        ['NOC Validity', (val('validity') ? val('validity') + ' ' : '') + 'from the date of signing'],
+      ];
+      var tTop = 74, rh = 6.2, split = 118;
+      doc.setLineWidth(0.25);
+      doc.setFontSize(10);
+      rows.forEach(function (r, i) {
+        var y = tTop + i * rh;
+        doc.rect(L, y, CW, rh);
+        doc.line(split, y, split, y + rh);
+        doc.setFont('helvetica', 'normal');
+        doc.text(r[0], L + 2, y + 4.2);
+        doc.text(r[1] || '', split + 2, y + 4.2);
+      });
+      var tBot = tTop + rows.length * rh;
+
+      doc.setFontSize(10.5);
+      var cy = tBot + 12, lh = 5.2;
+      var seg = [
+        ['I hereby grant my full consent and no objection to ', 'normal'],
+        ['PSI Real Estate LLC', 'bold'],
+        [' to advertise, market, and negotiate the rental of the above-mentioned property on my behalf.', 'normal'],
+      ];
+      var cx = L, line = cy;
+      seg.forEach(function (s) {
+        doc.setFont('helvetica', s[1]);
+        s[0].split(' ').forEach(function (word) {
+          if (!word) return;
+          var w = doc.getTextWidth(word + ' ');
+          if (cx + w > R) { cx = L; line += lh; }
+          doc.text(word, cx, line);
+          cx += w;
+        });
+      });
+
+      var oy = line + 16;
+      doc.setFont('helvetica', 'bold');
+      doc.text("Owner's Details:", L, oy);
+      doc.setFont('helvetica', 'normal');
+      doc.text('Name: ' + val('ownerName'), L, oy + 8);
+      doc.text('Passport/Emirates ID No.: ' + val('ownerId'), L, oy + 14);
+      doc.text('Email address: ' + val('ownerEmail'), L, oy + 20);
+      doc.text('Signature: _______________________', L, oy + 30);
+      doc.text('Date: ' + fmtDate(val('nocDate')), L, oy + 36);
+
+      var ny = oy + 50;
+      doc.setFont('helvetica', 'bold'); doc.setFontSize(11);
+      doc.text('NON-DISCLOSURE UNDERTAKING BY AGENCY', W / 2, ny, { align: 'center' });
+      doc.setFont('helvetica', 'normal'); doc.setFontSize(10.5);
+      doc.text(doc.splitTextToSize(
+        'We hereby undertake that all information and documents provided by the owner, including personal and property details, shall be treated as strictly confidential and shall not be disclosed to any third party, except for the purpose of obtaining necessary permits and marketing the property.',
+        CW), L, ny + 9);
+
+      var ay = ny + 36;
+      doc.text('Agent Name: ' + val('agentName'), L, ay);
+      doc.text('Agent Signature:', 138, ay);
+
+      var fname = 'NOC - ' + val('propertyName') + (val('unitNo') ? ' - ' + val('unitNo') : '');
+      fname = fname.replace(/[\\/:*?"<>|]+/g, ' ').replace(/\s+/g, ' ').trim() + '.pdf';
+      doc.save(fname);
+    } catch (e) {
+      alert('Could not create the PDF: ' + e.message);
+    }
+    btn.disabled = false;
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Saadiyat Island · Agent Expertise · PSIai</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M40EBXBK4W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-M40EBXBK4W',{page_title:'saadiyat-expert'});</script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --paper:#F7F2E9; --card:#FCF9F2; --band:#EFE8D9; --line:#E2D9C6; --hair:#D8CDB5;
+    --ink:#211D15; --body:#4C4638; --dim:#8A8170;
+    --sea:#0E4F5C; --seasoft:rgba(14,79,92,.07);
+    --gold:#A97F2F; --red:#8C3A22; --redsoft:#F6E8E2;
+  }
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{background:var(--paper);color:var(--body);font-family:'Helvetica Neue',-apple-system,system-ui,Arial,sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:0 24px}
+  .mono{font-family:'IBM Plex Mono',monospace}
+
+  /* top bar */
+  .top{background:var(--paper);border-bottom:1px solid var(--hair);position:sticky;top:0;z-index:60}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;padding:11px 24px}
+  .top a{color:var(--sea);text-decoration:none;font-size:12px;letter-spacing:.06em;font-weight:600}
+  .top .t{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:15px}
+  .top .tag{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+
+  /* hero */
+  .hero{padding-top:44px;padding-bottom:30px;border-bottom:1px solid var(--hair)}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sea)}
+  h1{font-family:'Fraunces',Georgia,serif;font-size:52px;font-weight:600;letter-spacing:-.015em;color:var(--ink);line-height:1.02;margin-top:12px}
+  .hero .sub{font-size:16px;margin-top:14px;max-width:46ch}
+  .hero .sub b{color:var(--ink);font-weight:600}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair);margin-top:26px}
+  .stat{background:var(--card);padding:13px 14px}
+  .stat .n{font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:var(--ink);line-height:1.1}
+  .stat .l{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+  .stagger>*{animation:rise .55s ease both}
+  .stagger>*:nth-child(2){animation-delay:.07s}.stagger>*:nth-child(3){animation-delay:.14s}
+  .stagger>*:nth-child(4){animation-delay:.21s}.stagger>*:nth-child(5){animation-delay:.28s}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+  /* chapter nav */
+  .chnav{position:sticky;top:43px;z-index:50;background:var(--paper);border-bottom:1px solid var(--hair)}
+  .chnav .in{display:flex;gap:20px;overflow-x:auto;padding:10px 24px;max-width:680px;margin:0 auto;scrollbar-width:none}
+  .chnav .in::-webkit-scrollbar{display:none}
+  .chnav a{flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:2px 0}
+  .chnav a b{color:var(--sea);font-weight:500;margin-right:5px}
+
+  /* sections */
+  section{padding:40px 0 8px}
+  .shead{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:20px}
+  .snum{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--sea);letter-spacing:.08em}
+  h2{font-family:'Fraunces',Georgia,serif;font-size:27px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+  h3{font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:600;color:var(--ink);margin:22px 0 8px}
+  p{margin-bottom:12px}
+  p b{color:var(--ink);font-weight:600}
+  .rev{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+  .rev.on{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.stagger>*{animation:none}}
+
+  .note{background:var(--seasoft);border-left:2px solid var(--sea);padding:12px 14px;font-size:13.5px;margin:14px 0}
+  .note b{color:var(--sea)}
+
+  /* timeline */
+  .tl{border-left:1px solid var(--hair);margin:6px 0 10px 4px;padding-left:0}
+  .tli{position:relative;padding:0 0 18px 22px}
+  .tli::before{content:"";position:absolute;left:-4px;top:7px;width:7px;height:7px;border-radius:50%;background:var(--paper);border:1.5px solid var(--sea)}
+  .tli.mus::before{background:var(--sea)}
+  .tly{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--sea);letter-spacing:.06em}
+  .tlt{font-size:14px;color:var(--body);margin-top:2px}
+  .tlt b{color:var(--ink)}
+
+  /* district + museum rows */
+  .rows{border-top:1px solid var(--hair)}
+  .row{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--hair);align-items:baseline}
+  .row .k{flex:0 0 148px;font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:14.5px;line-height:1.3}
+  .row .v{flex:1;font-size:13.5px}
+  .row .v .who{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--sea);display:block;margin-top:3px}
+
+  .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair)}
+  .mus{background:var(--card);padding:12px 13px}
+  .mus .d{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--sea);letter-spacing:.06em}
+  .mus .n{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:14.5px;line-height:1.25;margin-top:3px}
+  .gugg{background:var(--ink);color:#EDE6D6;padding:20px 18px;margin-top:14px}
+  .gugg .d{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#C9A961}
+  .gugg .n{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#F4EEDF;margin-top:6px;line-height:1.15}
+  .gugg .c{font-size:13.5px;margin-top:8px;color:#BDB49E;line-height:1.5}
+  .gugg .c b{color:#F4EEDF;font-weight:600}
+
+  /* census */
+  .era{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);border-bottom:1px solid var(--hair);padding-bottom:7px;margin:26px 0 0}
+  .ci{padding:11px 0;border-bottom:1px solid var(--hair)}
+  .ci .l1{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+  .ci .nm{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:15px}
+  .ci .yr{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--sea);flex:0 0 auto}
+  .ci .l2{font-size:13px;color:var(--body);margin-top:3px}
+  .ci .l2 .st{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:1.5px 7px;border:1px solid var(--hair);border-radius:999px;color:var(--dim);white-space:nowrap}
+  .ci .l2 .st.ready{color:var(--sea);border-color:var(--sea)}
+  .ci .l2 .st.uc{color:var(--gold);border-color:var(--gold)}
+  .flag{color:var(--gold)}
+
+  /* data tables */
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:left;font-weight:500;padding:8px 10px 8px 0;border-bottom:2px solid var(--ink)}
+  td{padding:9px 10px 9px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+  td:first-child{color:var(--ink);font-weight:600}
+  td .mono, .num{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-variant-numeric:tabular-nums}
+  .up{color:var(--sea);font-weight:600}
+  .down{color:var(--red);font-weight:600}
+  .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tscroll table{min-width:520px}
+
+  .bignum{display:flex;flex-wrap:wrap;gap:1px;background:var(--hair);border:1px solid var(--hair);margin:16px 0}
+  .bn{background:var(--card);padding:14px;flex:1 1 150px}
+  .bn .n{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:var(--ink)}
+  .bn .n small{font-size:14px;color:var(--dim);font-family:'Helvetica Neue',sans-serif;font-weight:400}
+  .bn .l{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:4px;line-height:1.45}
+
+  /* sell / redlines */
+  .angle{padding:12px 0;border-bottom:1px solid var(--hair)}
+  .angle .t{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:15.5px}
+  .angle .b{font-size:13.5px;margin-top:4px}
+  .redbox{background:var(--redsoft);border:1px solid #E3C4B6;padding:16px 16px 8px;margin-top:20px}
+  .redbox h3{margin-top:0;color:var(--red)}
+  .redbox li{margin:0 0 9px 18px;font-size:13.5px}
+  .redbox li b{color:var(--red)}
+
+  /* quiz */
+  .q{border:1px solid var(--hair);background:var(--card);margin-bottom:10px}
+  .q button{display:block;width:100%;text-align:left;background:none;border:0;padding:13px 14px;font:inherit;font-size:14px;color:var(--ink);font-weight:600;cursor:pointer}
+  .q button::before{content:"Q";font-family:'IBM Plex Mono',monospace;color:var(--sea);margin-right:9px;font-weight:500}
+  .q .a{display:none;padding:0 14px 13px;font-size:13.5px;border-top:1px dashed var(--hair);padding-top:11px}
+  .q.open .a{display:block}
+  .q .a b{color:var(--ink)}
+
+  .foot{padding:26px 0 40px;border-top:1px solid var(--hair);margin-top:34px;font-size:12px;color:var(--dim);line-height:1.7}
+  .foot b{color:var(--body)}
+  @media (max-width:420px){
+    h1{font-size:42px}
+    .row .k{flex-basis:118px}
+    .mgrid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <a href="../">&larr; Projects</a>
+  <div class="t">Saadiyat Island</div>
+  <div class="tag">PSIai &middot; Internal</div>
+</div></div>
+
+<div class="wrap hero stagger">
+  <div class="eyebrow">Agent Expertise &middot; Abu Dhabi &middot; Compiled Aug 2026</div>
+  <h1>Saadiyat<br>Island</h1>
+  <div class="sub">Twenty years, two AED&nbsp;100&nbsp;billion master plans, and the world&rsquo;s densest museum district. <b>Read this page and you can hold the Saadiyat conversation with anyone</b> &mdash; buyer, owner, or developer rep.</div>
+  <div class="stats">
+    <div class="stat"><div class="n">AED 13.7B</div><div class="l">2025 sales &mdash; Abu Dhabi&rsquo;s #1 area (ADREC)</div></div>
+    <div class="stat"><div class="n" id="guggdays">&mdash;</div><div class="l">Days to Guggenheim &mdash; 11 Dec 2026</div></div>
+    <div class="stat"><div class="n">~3,192<small style="font-size:13px;color:var(--dim)"> /sqft</small></div><div class="l">Island apartments, asking, Jul 2026</div></div>
+    <div class="stat"><div class="n">AED 400M</div><div class="l">Record mansion sale, Jul 2025</div></div>
+  </div>
+</div>
+
+<div class="chnav"><div class="in">
+  <a href="#story"><b>01</b>Story</a>
+  <a href="#timeline"><b>02</b>Timeline</a>
+  <a href="#districts"><b>03</b>Districts</a>
+  <a href="#museums"><b>04</b>Museums</a>
+  <a href="#census"><b>05</b>Every project</a>
+  <a href="#prices"><b>06</b>Prices</a>
+  <a href="#growth"><b>07</b>Appreciation</a>
+  <a href="#future"><b>08</b>Future</a>
+  <a href="#sell"><b>09</b>Sell it right</a>
+  <a href="#quiz"><b>10</b>Test yourself</a>
+</div></div>
+
+<div class="wrap">
+
+<section id="story" class="rev">
+  <div class="shead"><span class="snum">01</span><h2>The island in 60 seconds</h2></div>
+  <p>Saadiyat is a <b>27 sq km island</b> 500m off Abu Dhabi, conceived in 2004 as the emirate&rsquo;s culture-led answer to &ldquo;what comes after oil.&rdquo; The state developer <b>TDIC</b> unveiled the plan in 2007: seven districts, ~150,000 residents, AED&nbsp;100B, anchored by a museum district signed by the Louvre and Guggenheim. The 2008 crash pushed the museums back a decade.</p>
+  <p>Then the thesis landed. <b>Louvre Abu Dhabi opened 2017</b>. <b>Aldar bought TDIC&rsquo;s Saadiyat portfolio in 2018 for AED&nbsp;3.7B</b> and became the island&rsquo;s de facto master developer. And in a single month &mdash; <b>Nov&ndash;Dec 2025</b> &mdash; the Natural History Museum and Zayed National Museum both opened on schedule. The Guggenheim closes the loop on <b>11 December 2026</b>.</p>
+  <p>Prices ran <b>+27&ndash;32% a year through 2024&ndash;25</b>, making Saadiyat ADREC&rsquo;s #1 transaction area (AED&nbsp;13.7B in 2025 &mdash; 4&times; its 2022 level). 2026 is a cooler, split market. And in July 2026 Aldar unveiled the final act: <b>Marsa Al Saadiyat</b>, a second AED&nbsp;100B waterfront city on the island&rsquo;s south.</p>
+  <div class="note"><b>The one-liner to memorise:</b> the Cultural District core is nearly built out and genuinely scarce &mdash; but the island as a whole is entering its biggest construction phase ever. An expert says both halves.</div>
+</section>
+
+<section id="timeline" class="rev">
+  <div class="shead"><span class="snum">02</span><h2>Twenty years in one scroll</h2></div>
+  <div class="tl">
+    <div class="tli"><div class="tly">2004&ndash;05</div><div class="tlt">Island conceived; <b>TDIC created</b> as master developer (Law 12/2005).</div></div>
+    <div class="tli"><div class="tly">2007</div><div class="tlt">Cultural District unveiled &mdash; Louvre, Guggenheim, Zayed National Museum. Target: everything done by 2018.</div></div>
+    <div class="tli"><div class="tly">2008&ndash;09</div><div class="tlt">Global crash; museum dates slip ~a decade. <b>Sheikh Khalifa Bridge opens (2009)</b>; first villas launch at Saadiyat Beach.</div></div>
+    <div class="tli"><div class="tly">2010&ndash;11</div><div class="tlt">Golf Club (Gary Player, 2010); <b>Park Hyatt &amp; St. Regis open (2011)</b>.</div></div>
+    <div class="tli"><div class="tly">2014&ndash;15</div><div class="tlt"><b>NYU Abu Dhabi campus + Cranleigh school open (2014)</b>; Mamsha launches Sep 2014, Jawaher Apr 2015.</div></div>
+    <div class="tli mus"><div class="tly">2017</div><div class="tlt"><b>Louvre Abu Dhabi opens, 11 Nov</b> &mdash; the island&rsquo;s first proof point.</div></div>
+    <div class="tli"><div class="tly">2018</div><div class="tlt"><b>Aldar buys TDIC&rsquo;s portfolio &mdash; AED 3.7B</b> (assets, projects, ~1.1M sqm of land). Rixos &amp; Jumeirah resorts open.</div></div>
+    <div class="tli"><div class="tly">2019&ndash;20</div><div class="tlt">Saadiyat Grove launched (AED 8B); Mamsha handed over ~2 yrs late; Soul Beach + Berklee open.</div></div>
+    <div class="tli"><div class="tly">2022&ndash;24</div><div class="tlt">The Aldar launch wave: Louvre Residences, Grove, Lagoons, Source, Manarat, Nobu, Nouran, Mamsha Gardens/Palm, Mandarin Oriental.</div></div>
+    <div class="tli mus"><div class="tly">2025</div><div class="tlt"><b>teamLab (Apr) &middot; Natural History Museum (22 Nov) &middot; Zayed National Museum (3 Dec)</b> &mdash; two anchors delivered on schedule, 3 weeks apart. Prices peak at +27&ndash;32%/yr.</div></div>
+    <div class="tli mus"><div class="tly">2026</div><div class="tlt">Grove mall full opening; <b>Marsa Al Saadiyat unveiled 22 Jul (AED 100B)</b>; <b>Guggenheim opens 11 Dec</b>.</div></div>
+  </div>
+</section>
+
+<section id="districts" class="rev">
+  <div class="shead"><span class="snum">03</span><h2>Eight districts, three developers</h2></div>
+  <div class="rows">
+    <div class="row"><div class="k">Cultural District</div><div class="v">The museums + Grove + the Mamsha beachfront strip. The island&rsquo;s value engine.<span class="who">DCT (museums) &middot; Aldar (homes &amp; retail)</span></div></div>
+    <div class="row"><div class="k">Saadiyat Beach</div><div class="v">The original resort district &mdash; beach villas, golf, Park Hyatt / St. Regis / Rixos / Jumeirah.<span class="who">Aldar (ex-TDIC)</span></div></div>
+    <div class="row"><div class="k">Marsa Al Saadiyat</div><div class="v">Ex&ndash;Marina District, 6.4M sqm. AED 100B final phase: homes for 58,000, largest marina in AD, Etihad Rail station.<span class="who">Aldar &middot; unveiled Jul 2026</span></div></div>
+    <div class="row"><div class="k">Saadiyat Grove</div><div class="v">AED 8B mixed-use inside the Cultural District &mdash; mall fully open 2026, ~3,000 apartments.<span class="who">Aldar</span></div></div>
+    <div class="row"><div class="k">Saadiyat Lagoons</div><div class="v">Mangrove-edge villa district on the east side.<span class="who">Aldar</span></div></div>
+    <div class="row"><div class="k">Saadiyat Reserve</div><div class="v">Mid-island plots + The Dunes villas.<span class="who">Aldar</span></div></div>
+    <div class="row"><div class="k">Hidd Al Saadiyat</div><div class="v">Gated 453-villa coastal community on the north tip &mdash; the island&rsquo;s only non-Aldar master community.<span class="who">SDIC (private)</span></div></div>
+    <div class="row"><div class="k">Mamsha / Promenade</div><div class="v">1.4km beachfront strip fronting the museums + Soul Beach.<span class="who">Aldar (ex-TDIC)</span></div></div>
+  </div>
+</section>
+
+<section id="museums" class="rev">
+  <div class="shead"><span class="snum">04</span><h2>The museum district</h2></div>
+  <p>Client asks &ldquo;what&rsquo;s actually open?&rdquo; &mdash; this is the answer, with real dates:</p>
+  <div class="mgrid">
+    <div class="mus"><div class="d">2009</div><div class="n">Manarat Al Saadiyat</div></div>
+    <div class="mus"><div class="d">2014</div><div class="n">NYU Abu Dhabi campus</div></div>
+    <div class="mus"><div class="d">11 Nov 2017</div><div class="n">Louvre Abu Dhabi</div></div>
+    <div class="mus"><div class="d">Mar 2020</div><div class="n">Berklee Abu Dhabi</div></div>
+    <div class="mus"><div class="d">Feb 2023</div><div class="n">Abrahamic Family House</div></div>
+    <div class="mus"><div class="d">18 Apr 2025</div><div class="n">teamLab Phenomena</div></div>
+    <div class="mus"><div class="d">22 Nov 2025</div><div class="n">Natural History Museum</div></div>
+    <div class="mus"><div class="d">3 Dec 2025</div><div class="n">Zayed National Museum</div></div>
+  </div>
+  <div class="gugg">
+    <div class="d">Coming &middot; ticketed date</div>
+    <div class="n">Guggenheim Abu Dhabi &mdash; 11 December 2026</div>
+    <div class="c">Frank Gehry. The largest Guggenheim in the world. Announced 2006, twenty years of delays &mdash; <b>this is the first single-day, ticketed opening date ever given</b>, which is why it&rsquo;s credible. Louvre did a record <b>1.4M visitors in 2025</b>; the district Museum Pass launched Apr 2026.</div>
+  </div>
+  <div class="note"><b>Expert nuance:</b> two museums opened on schedule three weeks apart in late 2025. The delivery story flipped from &ldquo;always late&rdquo; to &ldquo;now delivering&rdquo; &mdash; but never sell a museum date as guaranteed.</div>
+</section>
+
+<section id="census" class="rev">
+  <div class="shead"><span class="snum">05</span><h2>Every project on the island</h2></div>
+  <p>30 entries, chronological. Launch price = press-verified launch-era price; <span class="flag">&#9888;</span> = single-sourced or conflicting &mdash; verify before quoting in writing.</p>
+
+  <div class="era">The TDIC era &middot; 2009&ndash;2016</div>
+  <div class="cens">
+    <div class="ci"><div class="l1"><span class="nm">Saadiyat Beach Villas</span><span class="yr">2009&ndash;13</span></div><div class="l2">TDIC &middot; Ph2 from AED 4.9M (2011), Ph3 6&ndash;8M (2013) &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">St. Regis Residences</span><span class="yr">2011 / 2018</span></div><div class="l2">TDIC &middot; complex 2011; villas retail-sold 2018 at 22&ndash;25M <span class="flag">&#9888;</span> &middot; apartments were institutionally held &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Saadiyat Beach Residences</span><span class="yr">2011</span></div><div class="l2">TDIC &middot; launched for <b>leasing</b>, never off-plan sold &mdash; rents from 70K/yr &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Hidd Al Saadiyat</span><span class="yr">2014</span></div><div class="l2">SDIC &middot; villas 7&ndash;40M (The National) &middot; completed Dec 2016 &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Mamsha Al Saadiyat</span><span class="yr">Sep 2014</span></div><div class="l2">TDIC &middot; 461 homes &middot; 1BR &asymp;2.5M &middot; Ph1 sold out in 2 days &middot; promised 2017, delivered Dec 2019 &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Jawaher Al Saadiyat</span><span class="yr">Apr 2015</span></div><div class="l2">TDIC &middot; 83 golf villas &middot; launch price never published &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Park View</span><span class="yr">Apr 2015</span></div><div class="l2">Bloom &middot; Marina District &middot; launch price not found &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Soho Square</span><span class="yr">2016</span></div><div class="l2">Bloom &middot; 304 units near NYUAD &middot; completed Dec 2019 &middot; <span class="st ready">Ready</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Nudra</span><span class="yr">~2016 <span class="flag">&#9888;</span></span></div><div class="l2">IMKAN &middot; boutique 37-unit beachfront enclave &middot; <span class="st ready">Ready</span></div></div>
+  </div>
+
+  <div class="era">The Aldar wave &middot; 2019&ndash;2023</div>
+  <div class="cens">
+    <div class="ci"><div class="l1"><span class="nm">Saadiyat Reserve plots</span><span class="yr">2019</span></div><div class="l2">Aldar &middot; plots, UAE nationals &middot; <span class="st">Plots</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Reserve &mdash; The Dunes</span><span class="yr">Jun 2021</span></div><div class="l2">Aldar &middot; 83 villas &middot; 4BR from 6.49M / 5BR from 7.99M &middot; sold out in a week &middot; <span class="st uc">Delivery ~2024 &#9888;</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Louvre Abu Dhabi Residences</span><span class="yr">Q1 2022</span></div><div class="l2">Aldar &middot; 186 units &middot; studios from 1.3M &mdash; world&rsquo;s first Louvre-branded homes &middot; <span class="st uc">Handover</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Grove &ldquo;Views&rdquo; series</span><span class="yr">Jun 2022</span></div><div class="l2">Aldar &middot; studio 905K / 1BR 1.4M / 2BR 2.399M &middot; 3 buildings sold out by H2 2022 &middot; <span class="st uc">Handing over</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Saadiyat Lagoons Ph1</span><span class="yr">Nov 2022</span></div><div class="l2">Aldar &middot; 207 villas from 6.1M (UAE nationals) &middot; later phases from 6.4&ndash;7.96M <span class="flag">&#9888;</span> &middot; <span class="st uc">Handover 2026&ndash;27</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Manarat Living I</span><span class="yr">Feb 2023</span></div><div class="l2">Aldar &middot; 273 units &middot; <span class="st uc">Handover ~Q1 2026</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">The Source I &amp; II</span><span class="yr">Mar + Jun 2023</span></div><div class="l2">Aldar &middot; I: 204 units from 2.3M &middot; II: 148 units from 2.82M &mdash; <b>the floor rose +23% in 10 weeks</b> &middot; <span class="st uc">U/C, from Q3 2026</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Nobu Residences</span><span class="yr">Nov 2023</span></div><div class="l2">Aldar &times; Nobu &middot; 88 homes from 7M &middot; penthouse sold USD 37.3M (then-AD record) &middot; portal &ldquo;from 3.6M&rdquo; is wrong &middot; <span class="st uc">U/C ~2027</span></div></div>
+  </div>
+
+  <div class="era">The new guard &middot; 2024&ndash;2026</div>
+  <div class="cens">
+    <div class="ci"><div class="l1"><span class="nm">Manarat Living II / III</span><span class="yr">Jan 2024 / Jan 2025</span></div><div class="l2">Aldar &middot; from 730K (II, smaller studios) / from 1.1M (III) <span class="flag">&#9888;</span> &middot; <span class="st uc">U/C 2027&ndash;28</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Nouran Living</span><span class="yr">Mar 2024</span></div><div class="l2">Aldar &middot; first homes in the Marina District &middot; 372 units from 750K &mdash; cheapest Aldar entry on the island &middot; <span class="st uc">Q4 2027</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">The Arthouse</span><span class="yr">2024</span></div><div class="l2">Aldar &middot; Grove &middot; 281 units from 3.3M <span class="flag">&#9888;</span> &middot; <span class="st uc">Q2 2028</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Mamsha Palm</span><span class="yr">Sep 2024</span></div><div class="l2">Aldar &middot; 47 homes from 3.6M <span class="flag">&#9888;</span> &middot; Koichi Takada design &middot; <span class="st uc">2027/28 &#9888;</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Mamsha Gardens</span><span class="yr">Nov 2024</span></div><div class="l2">Aldar &middot; 493 homes from 3.1M &middot; final 72 released 2025 &mdash; nearly sold through &middot; <span class="st uc">~Q2 2028</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Mandarin Oriental Residences</span><span class="yr">Nov 2024</span></div><div class="l2">Aldar / MO &middot; 228 homes &middot; no official launch price (broker &ldquo;6.2M&rdquo; <span class="flag">&#9888;</span>) &middot; first MO residences in AD &mdash; <b>no MO hotel confirmed</b> &middot; <span class="st uc">~2028</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Four Seasons Private Residences</span><span class="yr">2025</span></div><div class="l2"><b>ALAIN</b> + Four Seasons (not Aldar) &middot; 2BR suites from 21.2M up to 143M villas &middot; Oct 2025 penthouse = new AD record &middot; <span class="st uc">2029</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Faya Al Saadiyat</span><span class="yr">~2025 <span class="flag">&#9888;</span></span></div><div class="l2">Aldar &middot; limited-edition beach mansions ~95.9M <span class="flag">&#9888;</span> broker-only &mdash; verify vs Aldar desk &middot; <span class="st uc">Dec 2027 &#9888;</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Baccarat Residences</span><span class="yr">Feb 2026</span></div><div class="l2">Aldar &middot; Sou Fujimoto &middot; 77 homes &middot; <b>pricing never disclosed</b> &mdash; do not quote the contradictory broker figures &middot; <span class="st uc">~Q3 2029 &#9888;</span></div></div>
+    <div class="ci"><div class="l1"><span class="nm">Marsa Al Saadiyat</span><span class="yr">Jul 2026</span></div><div class="l2">Aldar &middot; AED 100B final district &middot; <b>first home sales H2 2026</b> &middot; <span class="st">Pre-launch</span></div></div>
+  </div>
+</section>
+
+<section id="prices" class="rev">
+  <div class="shead"><span class="snum">06</span><h2>Prices today</h2></div>
+  <p>Asking data (Bayut/PF), mid-2026. Island apartments <span class="num">AED&nbsp;3,192/sqft</span> &mdash; <b>+2.0% YoY after the boom</b>. Saadiyat trades at roughly <b>2&times; the Abu Dhabi median</b>.</p>
+  <div class="tscroll"><table>
+    <tr><th>Community</th><th>Level (asking)</th><th>6-mo move</th></tr>
+    <tr><td>Saadiyat Beach</td><td><span class="num">2,508/sqft</span> &middot; median villa ~7.2M (beachfront mega-villas list to 75M+)</td><td>&mdash;</td></tr>
+    <tr><td>Beach Residences</td><td>2BR ~<span class="num">1,870/sqft</span> (3.35&ndash;3.45M)</td><td class="up">+7%</td></tr>
+    <tr><td>Hidd Al Saadiyat</td><td>villas avg <span class="num">38.5&ndash;43M</span> &middot; ~2,800/sqft</td><td class="up">+15%</td></tr>
+    <tr><td>Mamsha Al Saadiyat</td><td>~<span class="num">3,000/sqft</span> &middot; 1BR 6.2&ndash;8.3M &middot; 3BR 17&ndash;28M</td><td class="up">+10%</td></tr>
+    <tr><td>Jawaher</td><td>10.4&ndash;30M &middot; 5BR 25&ndash;36M</td><td>&mdash;</td></tr>
+    <tr><td>Saadiyat Lagoons</td><td><span class="num">1,348/sqft</span> &middot; entry 7.5M, avg 9.8M</td><td class="down">&minus;9.6% YoY</td></tr>
+    <tr><td>Grove / Louvre Res.</td><td>from ~1.25&ndash;1.3M <span class="flag">&#9888;</span> aggregator data</td><td>&mdash;</td></tr>
+  </table></div>
+  <div class="bignum">
+    <div class="bn"><div class="n">AED 13.7B</div><div class="l">Saadiyat transactions FY2025 &mdash; #1 in Abu Dhabi, 4&times; 2022 (ADREC)</div></div>
+    <div class="bn"><div class="n">AED 400M</div><div class="l">Aldar mansion, Jul 2025 &mdash; most expensive AD home ever</div></div>
+    <div class="bn"><div class="n">$37.3M</div><div class="l">Nobu penthouse (2024); Four Seasons penthouse reset the record Oct 2025</div></div>
+  </div>
+  <div class="note"><b>Say it precisely:</b> those are asking-price levels; transaction records are ADREC. Quote the basis and you sound like the analyst in the room.</div>
+</section>
+
+<section id="growth" class="rev">
+  <div class="shead"><span class="snum">07</span><h2>How much prices actually appreciated</h2></div>
+  <div class="tscroll"><table>
+    <tr><th>Project</th><th>Launch</th><th>Now (asking)</th><th>Change</th></tr>
+    <tr><td>Mamsha Al Saadiyat</td><td><span class="num">1BR ~2.5M</span> (2014)</td><td><span class="num">6.2&ndash;8.3M</span></td><td class="up">&asymp; +150&ndash;230% / 12y</td></tr>
+    <tr><td>Grove Museum Views</td><td><span class="num">studio 905K</span> (2022)</td><td><span class="num">from ~1.3M</span> <span class="flag">&#9888;</span></td><td class="up">&asymp; +44% / 4y</td></tr>
+    <tr><td>Saadiyat Lagoons</td><td><span class="num">6.1M</span> (2022)</td><td><span class="num">entry 7.5M</span></td><td><span class="up">&asymp; +23%</span> &middot; <span class="down">&minus;9.6% last 12mo</span></td></tr>
+    <tr><td>The Source I</td><td><span class="num">2.3M</span> (2023)</td><td><span class="num">~2.4M+</span> <span class="flag">&#9888;</span></td><td>&asymp; +4&ndash;13%</td></tr>
+    <tr><td>Louvre Residences</td><td><span class="num">1.3M</span> (2022)</td><td><span class="num">1.25&ndash;1.3M</span> <span class="flag">&#9888;</span></td><td>&asymp; flat</td></tr>
+    <tr><td>Hidd Al Saadiyat</td><td><span class="num">7&ndash;40M</span> (2014)</td><td><span class="num">20&ndash;75M</span></td><td class="up">&asymp; 2&ndash;3&times; top end / 11y</td></tr>
+  </table></div>
+  <p style="margin-top:14px">Island trajectory (Bayut asking, AED/sqft): apartments <span class="num">1,452</span> (2019) &rarr; <span class="num">~3,192</span> (Jul 2026) &mdash; <b>&asymp; +168%</b>, almost all of it in 2024&ndash;25 (+32%, then +27%). Villas &asymp; +58% over the same run. <b>2026 split:</b> 3&ndash;4BR asking fell 13&ndash;15% while 5BR+ rose +36%.</p>
+  <div class="note"><b>The honest read:</b> the big multiples belonged to people who bought pre-museums (2014) or at 2021&ndash;22 launch floors. A buyer entering now pays post-museum prices into a cooler year &mdash; the remaining catalysts are the Guggenheim and Marsa. Real, but not a repeat of 2024&ndash;25. If a deal only works on assumed appreciation, it&rsquo;s a trade, not an investment &mdash; say so.</div>
+</section>
+
+<section id="future" class="rev">
+  <div class="shead"><span class="snum">08</span><h2>What&rsquo;s coming</h2></div>
+  <h3>Marsa Al Saadiyat &mdash; the second AED 100B</h3>
+  <p>Unveiled 22 Jul 2026 on the old Marina District land: <b>6.4M sqm, 8km of waterfront, homes for 58,000+, Abu Dhabi&rsquo;s largest marina (350 berths)</b>, a 6,000-seat performing-arts venue, and an <b>underground Etihad Rail station</b> &mdash; direct Abu Dhabi&ndash;Dubai in the masterplan (intent, no date &mdash; sell it as intent). First home sales H2 2026; enabling works from Q3 2026; delivery runs into the 2030s.</p>
+  <h3>Near-term calendar</h3>
+  <div class="rows">
+    <div class="row"><div class="k">11 Dec 2026</div><div class="v">Guggenheim opens &mdash; the Cultural District complete.</div></div>
+    <div class="row"><div class="k">2026</div><div class="v">Grove mall full opening (75K sqm, Zara/H&amp;M/Carrefour anchors); Nobu Hotel stated 2026, realistically 2026&ndash;27 <span class="flag">&#9888;</span>.</div></div>
+    <div class="row"><div class="k">2026&ndash;28</div><div class="v">Handover ladder: Manarat I &rarr; Source &rarr; Lagoons &rarr; Nouran/Nobu &rarr; Mamsha Gardens/Palm, Arthouse, MO Residences.</div></div>
+    <div class="row"><div class="k">~2029+</div><div class="v">Marsa + neighbouring Fahid Island (6,000+ homes) start delivering &mdash; the supply picture changes.</div></div>
+  </div>
+  <h3>Market context (ADREC, official)</h3>
+  <p>Abu Dhabi H1 2026: <b>AED 117B transacted, +112% YoY</b>; FDI +309%; <b>off-plan = 89% of residential sales value</b>. Saadiyat &asymp; 14% of the emirate&rsquo;s planned pipeline &mdash; and Abu Dhabi historically hands over less than planned. Near term the balance favours sellers.</p>
+</section>
+
+<section id="sell" class="rev">
+  <div class="shead"><span class="snum">09</span><h2>Sell it right</h2></div>
+  <div class="angle"><div class="t">Lead with the delivery flip</div><div class="b">&ldquo;For fifteen years this island was famous for delays. Then two museums opened three weeks apart, on schedule, and the Guggenheim has a ticketed date.&rdquo; Concrete, verifiable, disarming.</div></div>
+  <div class="angle"><div class="t">Scope the scarcity honestly</div><div class="b">Cultural District core &asymp; built out (Mamsha nearly sold through, Grove sold out its 2022 buildings). The island overall adds homes for 58K via Marsa. Saying both halves is what makes you credible.</div></div>
+  <div class="angle"><div class="t">Know the protections cold</div><div class="b">ADREC project escrow &middot; Madhmoun MLS (every listing permit-verified since Jul 2025) &middot; <b>2% transfer fee vs Dubai&rsquo;s 4%</b> &middot; Golden Visa at AED 2M (off-plan counts once &ge;2M is paid &amp; registered &mdash; verify per buyer).</div></div>
+  <div class="angle"><div class="t">Match the buyer</div><div class="b">Saadiyat = capital growth + prestige + end-use (beach, Cranleigh, NYUAD). Gross yields are only <b>3.5&ndash;4.3%</b> &mdash; a pure yield investor belongs on Reem or Al Reef, and telling them so wins the next deal.</div></div>
+  <div class="angle"><div class="t">Cost of ownership, upfront</div><div class="b">Service charges are Abu Dhabi&rsquo;s highest band (~AED 15&ndash;35/sqft <span class="flag">&#9888;</span> indicative) plus district cooling. Get the exact schedule per project before your client signs &mdash; volunteering this builds more trust than hiding it.</div></div>
+  <div class="redbox">
+    <h3>Never say</h3>
+    <ul>
+      <li><b>&ldquo;Waldorf Astoria on Saadiyat&rdquo;</b> &mdash; it&rsquo;s on Yas. No Armani, no Elie Saab project on the island either.</li>
+      <li><b>&ldquo;Saadiyat Shores&rdquo; is on Saadiyat</b> &mdash; Palm Hills&rsquo; project is on the mainland facing the island.</li>
+      <li><b>Baccarat prices</b> &mdash; Aldar never disclosed pricing; broker figures contradict each other.</li>
+      <li><b>&ldquo;Nobu from 3.6M&rdquo;</b> &mdash; wrong; launch was from AED 7M.</li>
+      <li><b>A museum date as a guarantee</b> &mdash; the Guggenheim slipped 20 years before this date.</li>
+      <li><b>Lagoons as a pure appreciation story</b> &mdash; disclose the &minus;9.6% YoY first.</li>
+      <li><b>An invented launch price</b> for TDIC-era stock &mdash; several were never published. &ldquo;Not on record&rdquo; is the expert answer.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="quiz" class="rev">
+  <div class="shead"><span class="snum">10</span><h2>Test yourself</h2></div>
+  <p>If you can answer these cold, you&rsquo;re the Saadiyat expert in the room. Tap to check.</p>
+  <div class="q"><button type="button">When does the Guggenheim open, and why is this date different from every previous one?</button><div class="a"><b>11 December 2026</b> &mdash; the first single-day, <b>ticketed</b> date ever announced (Jul 2026, DCT + Guggenheim Foundation), after 20 years of slippage since 2006.</div></div>
+  <div class="q"><button type="button">Who master-develops Saadiyat today, and how did that happen?</button><div class="a"><b>Aldar</b> &mdash; it bought TDIC&rsquo;s Saadiyat portfolio in <b>2018 for AED 3.7B</b> (operating assets + projects + ~1.1M sqm land). Museums stay with DCT; Hidd Al Saadiyat is SDIC&rsquo;s.</div></div>
+  <div class="q"><button type="button">When did Mamsha launch, at what price, and what did a 1BR do since?</button><div class="a"><b>September 2014</b> (not 2016 &mdash; folklore is wrong), 1BR &asymp; AED 2.5M, phase 1 sold out in two days. Today 1BRs ask 6.2&ndash;8.3M: <b>roughly +150&ndash;230% in 12 years</b>.</div></div>
+  <div class="q"><button type="button">A client wants 7% yield. What do you tell them?</button><div class="a">Not Saadiyat. Gross yields run <b>3.5&ndash;4.3%</b> &mdash; this island is a capital-growth and prestige market. Yield buyers belong on Al Reem (~7.6&ndash;8.5%) or Al Reef.</div></div>
+  <div class="q"><button type="button">What is Marsa Al Saadiyat in one breath?</button><div class="a">The island&rsquo;s <b>final district</b>: AED 100B, 6.4M sqm of the old Marina District, homes for 58,000+, AD&rsquo;s largest marina, an underground Etihad Rail station &mdash; unveiled 22 Jul 2026, first sales H2 2026.</div></div>
+  <div class="q"><button type="button">Which community is the island&rsquo;s soft spot right now?</button><div class="a"><b>Saadiyat Lagoons</b>: &minus;9.6%/sqft YoY on asking prices &mdash; off-plan resale supply hitting before the 2026&ndash;27 handovers. Entry is still &asymp;+23% over the 2022 launch.</div></div>
+  <div class="q"><button type="button">The three legal facts every Abu Dhabi off-plan buyer should hear?</button><div class="a"><b>ADREC-regulated project escrow</b> holds their money against construction milestones; <b>Madhmoun</b> verifies every listing since Jul 2025; the transfer fee is <b>2%</b> (vs Dubai&rsquo;s 4%).</div></div>
+  <div class="q"><button type="button">Name two &ldquo;Saadiyat&rdquo; claims that are actually false.</button><div class="a">&ldquo;Waldorf Astoria Residences on Saadiyat&rdquo; (it&rsquo;s <b>Yas</b>) and &ldquo;Saadiyat Shores is on the island&rdquo; (it&rsquo;s <b>mainland North Jubail</b>). Bonus: no Armani, no Elie Saab project on Saadiyat.</div></div>
+</section>
+
+<div class="foot">
+  <b>PSIai &middot; internal agent training &mdash; not client-facing.</b><br>
+  Compiled Aug 2026 from ADREC / Abu Dhabi Media Office, The National, Gulf News, Arab News, AGBI, Aldar &amp; developer press releases, Bayut market reports 2020&ndash;H1 2026, Property Finder. Asking prices &ne; transaction prices. Items marked &#9888; are single-sourced or conflicting &mdash; verify against the Aldar sales desk before putting them in writing. Full sourced dossier: ask Jad.
+</div>
+
+</div>
+
+<script>
+'use strict';
+(function(){
+  var d=Math.ceil((new Date(2026,11,11)-new Date())/86400000);
+  document.getElementById('guggdays').textContent=d>0?d+' days':'Open';
+
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -8% 0px'}):null;
+  document.querySelectorAll('.rev').forEach(function(el){io?io.observe(el):el.classList.add('on');});
+
+  document.querySelectorAll('.q button').forEach(function(b){
+    b.addEventListener('click',function(){b.parentNode.classList.toggle('open');});
+  });
+})();
+</script>
+</body>
+</html>

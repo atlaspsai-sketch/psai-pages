@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340">
+  <rect width="680" height="340" fill="#F7F2E9"/>
+  <rect y="298" width="680" height="42" fill="#0E4F5C"/>
+  <line x1="40" y1="60" x2="640" y2="60" stroke="#D8CDB5" stroke-width="1"/>
+  <text x="40" y="48" font-family="Courier New,monospace" font-size="15" letter-spacing="5" fill="#0E4F5C">AGENT EXPERTISE &#183; ABU DHABI</text>
+  <text x="36" y="182" font-family="Georgia,serif" font-size="92" font-weight="bold" fill="#211D15" letter-spacing="-2">Saadiyat</text>
+  <text x="36" y="266" font-family="Georgia,serif" font-size="92" font-weight="bold" fill="#211D15" letter-spacing="-2">Island</text>
+  <text x="640" y="266" text-anchor="end" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#A97F2F">est. 2004</text>
+  <text x="40" y="325" font-family="Courier New,monospace" font-size="14" letter-spacing="4" fill="#F7F2E9">THE MUSEUM ISLAND &#183; GUGGENHEIM 11&#183;12&#183;2026</text>
+</svg>

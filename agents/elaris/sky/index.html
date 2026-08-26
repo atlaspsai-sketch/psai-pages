@@ -147,7 +147,7 @@
 <div class="wrap foot">Internal reference for PSI agents — not client-facing marketing. Data: OFFICIAL Object 1 brochures + layout books (in hand) + sales-desk price list 12 Aug 2026, cross-checked against DLD registry and Property Finder records. Prices move with releases — always confirm the live list before quoting. All payments to the RERA project escrow account only — never any other account, in any currency.</div>
 
 <script>
-document.querySelectorAll('h2.tog').forEach(function(h){h.addEventListener('click',function(){var s=h.parentElement;s.classList.toggle('open');if(s.classList.contains('open')&&window.gtag)gtag('event','section_open',{section:s.id});});});
+document.querySelectorAll('h2.tog').forEach(function(h){h.addEventListener('click',function(){var s=h.closest('section');s.classList.toggle('open');if(s.classList.contains('open')&&window.gtag)gtag('event','section_open',{section:s.id});});});
 if(location.hash){var t=document.querySelector(location.hash);if(t&&t.tagName==='SECTION'){document.querySelectorAll('section.open').forEach(function(s){s.classList.remove('open')});t.classList.add('open');t.scrollIntoView();}}
 document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){var t=document.querySelector(a.getAttribute('href'));if(t&&!t.classList.contains('open'))t.classList.add('open');});});
 </script>

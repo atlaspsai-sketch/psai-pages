@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Hudayriyat Island · Agent Expertise · PSIai</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M40EBXBK4W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-M40EBXBK4W',{page_title:'hudayriyat-expert'});</script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --paper:#F7F2E9; --card:#FCF9F2; --band:#EFE8D9; --line:#E2D9C6; --hair:#D8CDB5;
+    --ink:#211D15; --body:#4C4638; --dim:#8A8170;
+    --sea:#1C3F6E; --seasoft:rgba(28,63,110,.07);
+    --gold:#B8722C; --red:#8C3A22; --redsoft:#F6E8E2;
+  }
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{background:var(--paper);color:var(--body);font-family:'Helvetica Neue',-apple-system,system-ui,Arial,sans-serif;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:0 24px}
+  .mono{font-family:'IBM Plex Mono',monospace}
+
+  .top{background:var(--paper);border-bottom:1px solid var(--hair);position:sticky;top:0;z-index:60}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;padding:11px 24px}
+  .top a{color:var(--sea);text-decoration:none;font-size:12px;letter-spacing:.06em;font-weight:600}
+  .top .t{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:15px}
+  .top .tag{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim)}
+
+  .hero{padding-top:44px;padding-bottom:30px;border-bottom:1px solid var(--hair)}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--sea)}
+  h1{font-family:'Fraunces',Georgia,serif;font-size:52px;font-weight:600;letter-spacing:-.015em;color:var(--ink);line-height:1.02;margin-top:12px}
+  .hero .sub{font-size:16px;margin-top:14px;max-width:46ch}
+  .hero .sub b{color:var(--ink);font-weight:600}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--hair);border:1px solid var(--hair);margin-top:26px}
+  .stat{background:var(--card);padding:13px 14px}
+  .stat .n{font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:var(--ink);line-height:1.1}
+  .stat .l{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+  .stagger>*{animation:rise .55s ease both}
+  .stagger>*:nth-child(2){animation-delay:.07s}.stagger>*:nth-child(3){animation-delay:.14s}
+  .stagger>*:nth-child(4){animation-delay:.21s}.stagger>*:nth-child(5){animation-delay:.28s}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+  .chnav{position:sticky;top:43px;z-index:50;background:var(--paper);border-bottom:1px solid var(--hair)}
+  .chnav .in{display:flex;gap:20px;overflow-x:auto;padding:10px 24px;max-width:680px;margin:0 auto;scrollbar-width:none}
+  .chnav .in::-webkit-scrollbar{display:none}
+  .chnav a{flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);text-decoration:none;padding:2px 0}
+  .chnav a b{color:var(--sea);font-weight:500;margin-right:5px}
+
+  section{padding:14px 0 6px}
+  .shead{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:0;cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none}
+  .shead::after{content:"+";margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:19px;color:var(--sea);line-height:1}
+  section.open .shead::after{content:"\2212"}
+  .sbody{display:none;padding-top:20px}
+  section.open .sbody{display:block}
+  .snum{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--sea);letter-spacing:.08em}
+  h2{font-family:'Fraunces',Georgia,serif;font-size:27px;font-weight:600;color:var(--ink);letter-spacing:-.01em}
+  h3{font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:600;color:var(--ink);margin:22px 0 8px}
+  p{margin-bottom:12px}
+  p b{color:var(--ink);font-weight:600}
+  .rev{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+  .rev.on{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.stagger>*{animation:none}}
+
+  .note{background:var(--seasoft);border-left:2px solid var(--sea);padding:12px 14px;font-size:13.5px;margin:14px 0}
+  .note b{color:var(--sea)}
+
+  .tl{border-left:1px solid var(--hair);margin:6px 0 10px 4px}
+  .tli{position:relative;padding:0 0 18px 22px}
+  .tli::before{content:"";position:absolute;left:-4px;top:7px;width:7px;height:7px;border-radius:50%;background:var(--paper);border:1.5px solid var(--sea)}
+  .tli.mus::before{background:var(--sea)}
+  .tly{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--sea);letter-spacing:.06em}
+  .tlt{font-size:14px;color:var(--body);margin-top:2px}
+  .tlt b{color:var(--ink)}
+
+  .rows{border-top:1px solid var(--hair)}
+  .row{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--hair);align-items:baseline}
+  .row .k{flex:0 0 148px;font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:14.5px;line-height:1.3}
+  .row .v{flex:1;font-size:13.5px}
+  .row .v .who{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--sea);display:block;margin-top:3px}
+
+  .era{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);border-bottom:1px solid var(--hair);padding-bottom:7px;margin:26px 0 0}
+  .ci{padding:11px 0;border-bottom:1px solid var(--hair)}
+  .ci .l1{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+  .ci .nm{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:15px}
+  .ci .yr{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--sea);flex:0 0 auto}
+  .ci .l2{font-size:13px;color:var(--body);margin-top:3px}
+  .ci .l2 b{color:var(--ink)}
+  .st{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:1.5px 7px;border:1px solid var(--hair);border-radius:999px;color:var(--dim);white-space:nowrap}
+  .st.hi{color:var(--sea);border-color:var(--sea)}
+  .st.md{color:var(--gold);border-color:var(--gold)}
+  .st.lo{color:var(--red);border-color:var(--red)}
+  .flag{color:var(--gold)}
+
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-align:left;font-weight:500;padding:8px 10px 8px 0;border-bottom:2px solid var(--ink)}
+  td{padding:9px 10px 9px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+  td:first-child{color:var(--ink);font-weight:600}
+  .num{font-family:'IBM Plex Mono',monospace;font-size:12.5px;font-variant-numeric:tabular-nums}
+  .up{color:var(--sea);font-weight:600}
+  .down{color:var(--red);font-weight:600}
+  .tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tscroll table{min-width:520px}
+
+  .bignum{display:flex;flex-wrap:wrap;gap:1px;background:var(--hair);border:1px solid var(--hair);margin:16px 0}
+  .bn{background:var(--card);padding:14px;flex:1 1 150px}
+  .bn .n{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:var(--ink)}
+  .bn .l{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:4px;line-height:1.45}
+
+  .dark{background:var(--ink);color:#EDE6D6;padding:20px 18px;margin-top:14px}
+  .dark .d{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D3A15A}
+  .dark .n{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#F4EEDF;margin-top:6px;line-height:1.15}
+  .dark .c{font-size:13.5px;margin-top:8px;color:#BDB49E;line-height:1.5}
+  .dark .c b{color:#F4EEDF;font-weight:600}
+
+  .angle{padding:12px 0;border-bottom:1px solid var(--hair)}
+  .angle .t{font-family:'Fraunces',Georgia,serif;font-weight:600;color:var(--ink);font-size:15.5px}
+  .angle .b{font-size:13.5px;margin-top:4px}
+  .redbox{background:var(--redsoft);border:1px solid #E3C4B6;padding:16px 16px 8px;margin-top:20px}
+  .redbox h3{margin-top:0;color:var(--red)}
+  .redbox li{margin:0 0 9px 18px;font-size:13.5px}
+  .redbox li b{color:var(--red)}
+
+  .q{border:1px solid var(--hair);background:var(--card);margin-bottom:10px}
+  .q button{display:block;width:100%;text-align:left;background:none;border:0;padding:13px 14px;font:inherit;font-size:14px;color:var(--ink);font-weight:600;cursor:pointer}
+  .q button::before{content:"Q";font-family:'IBM Plex Mono',monospace;color:var(--sea);margin-right:9px;font-weight:500}
+  .q .a{display:none;padding:0 14px 13px;font-size:13.5px;border-top:1px dashed var(--hair);padding-top:11px}
+  .q.open .a{display:block}
+  .q .a b{color:var(--ink)}
+
+  .quick{border:1px solid var(--hair);background:var(--card);margin-top:26px}
+  .quick .qh{display:flex;align-items:baseline;gap:12px;padding:13px 16px;border-bottom:2px solid var(--ink)}
+  .quick .qh h2{font-size:19px}
+  .quick ol{list-style:none;counter-reset:qk}
+  .quick li{counter-increment:qk;display:block;position:relative;padding:10px 16px 10px 46px;border-bottom:1px solid var(--hair);font-size:13.5px;line-height:1.45}
+  .quick li:last-child{border-bottom:0}
+  .quick li::before{content:counter(qk,decimal-leading-zero);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--sea);position:absolute;left:16px;top:12px}
+  .quick li b{color:var(--ink)}
+  .foot{padding:26px 0 40px;border-top:1px solid var(--hair);margin-top:34px;font-size:12px;color:var(--dim);line-height:1.7}
+  .foot b{color:var(--body)}
+  @media (max-width:420px){
+    h1{font-size:42px}
+    .row .k{flex-basis:118px}
+  }
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+  <a href="../">&larr; Projects</a>
+  <div class="t">Hudayriyat Island</div>
+  <div class="tag">PSIai &middot; Internal</div>
+</div></div>
+
+<div class="wrap hero stagger">
+  <div class="eyebrow">Agent Expertise &middot; Abu Dhabi &middot; Compiled Sep 2026</div>
+  <h1>Hudayriyat<br>Island</h1>
+  <div class="sub">The 8 facts below make you dangerous in two minutes. <b>Tap any chapter when you need depth</b> — every launch, every developer price, what is real and what is broker talk.</div>
+  <div class="stats">
+    <div class="stat"><div class="n">AED 19B</div><div class="l">H1 2026 sales — Abu Dhabi’s #1 area, 27% (ADREC)</div></div>
+    <div class="stat"><div class="n">0 of 11</div><div class="l">Launches handed over — first is Q4 2027</div></div>
+    <div class="stat"><div class="n">AED 13B+</div><div class="l">Golf Estates, Jul 2026 — UAE record launch</div></div>
+    <div class="stat"><div class="n">+2.7%</div><div class="l">Median registered resale premium (232 deals) ⚠</div></div>
+  </div>
+</div>
+
+<div class="chnav"><div class="in">
+  <a href="#story"><b>01</b>Story</a>
+  <a href="#timeline"><b>02</b>Timeline</a>
+  <a href="#zones"><b>03</b>Zones</a>
+  <a href="#anchors"><b>04</b>Anchors</a>
+  <a href="#census"><b>05</b>Every launch</a>
+  <a href="#prices"><b>06</b>Prices</a>
+  <a href="#growth"><b>07</b>Appreciation</a>
+  <a href="#future"><b>08</b>Future</a>
+  <a href="#sell"><b>09</b>Sell it right</a>
+  <a href="#quiz"><b>10</b>Test yourself</a>
+</div></div>
+
+<div class="wrap">
+<div class="quick">
+  <div class="qh"><span class="snum">00</span><h2>Memorise these 8</h2></div>
+  <ol>
+    <li><b>Modon owns and builds the whole island</b> — and Modon is the Abu Dhabi Government (L’imad Holding, 84.76%, since Oct 2025). Residential sales only began <b>15 Mar 2024</b>.</li>
+    <li><b>#1 district in Abu Dhabi, H1 2026</b>: AED 19B, 27% of the emirate, 8× a year earlier. Five of the top-10 projects in Abu Dhabi are here (ADREC).</li>
+    <li><b>Nothing has been handed over.</b> First is Al Naseem, <b>Q4 2027</b> — already slipped from Q4 2026. Bashayer 2030. Golf Estates Aug 2030. Budget the slip out loud.</li>
+    <li><b>Developer prices you can quote</b>: Nawayef East Homes from 6.6M · Park Views from 2M · Village from 4.1M · Bashayer villas 7.2M, 1BR 2.35M → 2.5M · Golf Estates averages 4.2M–35.8M · Al Naseem 4BR 7.8M.</li>
+    <li><b>Broker numbers Modon never printed</b>: Nawayef West “6M / 19M / 41M” and Wadeem “3.2M”. Say “reported”, never “Modon launched at”.</li>
+    <li><b>The sell-outs are real and dated</b>: Village same day AED 2B · Wadeem 72 hours AED 5.5B · Bashayer one day AED 3B · Golf Estates AED 13B+ in days — the UAE record.</li>
+    <li><b>Resale is thin</b>: 232 registered resales, median <b>+2.7%</b> gross, median seller <b>−6.8%</b> after fees ⚠. “30–50% appreciation since launch” is a broker myth — do not repeat it.</li>
+    <li><b>Anchors</b>: Surf Abu Dhabi open (Oct 2024) · Velodrome due Dec 2026 · one bridge today, tunnels to Mussafah only at tender · zero rentals exist. The trust kit: ADREC escrow · 2% transfer · freehold all nationalities · Golden Visa at AED 2M.</li>
+  </ol>
+</div>
+</div>
+
+<div class="wrap">
+
+<section id="story" class="rev">
+  <div class="shead"><span class="snum">01</span><h2>The island in 60 seconds</h2></div>
+<div class="sbody">
+  <p>Hudayriyat is a <b>30 sq km island directly opposite Al Bateen</b> — 11 km, about ten minutes, from Hamdan Street. Abu Dhabi earmarked it for housing in Plan 2030 (2009) and built a US$50M bridge to it in 2012. Then nothing happened for six years: the <b>“bridge to nowhere”</b>.</p>
+  <p>The island opened as a public beach in May 2018 and as the <b>Leisure &amp; Entertainment District</b> (Marsana, 321 Sports, OCR Park, Circuit X, Bab Al Nojoum) in November 2020, under <b>Modon Properties</b> — a government developer created in January 2018. On <b>13 June 2023</b> Modon revealed a <b>51 million sqm master plan</b>, 53.8% the size of Abu Dhabi Island (the extra land is reclamation): two man-made residential hills, 53.5 km of coastline, Surf Abu Dhabi and a UCI velodrome as anchors.</p>
+  <p><b>Residential sales began 15 March 2024.</b> In 30 months Modon launched eleven phases across nine communities, disclosed <b>AED 24.75B+</b> from just five of them, and made Hudayriyat Abu Dhabi’s #1 district by value. Every home is off-plan; <b>none is built</b>.</p>
+  <div class="note"><b>The one-liner to memorise:</b> the hottest launch market in Abu Dhabi, cheaper per sqft than Saadiyat, with a government developer behind it — and a market that has never yet handed over a key, rented a unit, or proven a resale premium. An expert says both halves.</div>
+</div>
+</section>
+
+<section id="timeline" class="rev">
+  <div class="shead"><span class="snum">02</span><h2>From bridge-to-nowhere to UAE record</h2></div>
+<div class="sbody">
+  <div class="tl">
+    <div class="tli"><div class="tly">2009</div><div class="tlt">Plan Abu Dhabi 2030 designates the island for housing; <b>US$50M bridge contract</b> awarded (TDIC).</div></div>
+    <div class="tli"><div class="tly">2012</div><div class="tlt">Bridge finished six months early — island stays closed. Six years as the “bridge to nowhere”.</div></div>
+    <div class="tli"><div class="tly">2017–18</div><div class="tlt">UPC revives the plan (May 2017). <b>Modon Properties created Jan 2018.</b> First public access + beach, <b>27 May 2018</b>.</div></div>
+    <div class="tli mus"><div class="tly">10 Nov 2020</div><div class="tlt"><b>Leisure &amp; Entertainment District opens</b> after Sheikh Mohamed bin Zayed’s site tour — Marsana, 321 Sports, OCR Park, Circuit X, Bab Al Nojoum.</div></div>
+    <div class="tli"><div class="tly">2022</div><div class="tlt">Blue Flag beaches; UAE Tour stage; <b>CHEC dredging &amp; reclamation contract (Nov)</b>; Trail X 15 km MTB trail (Dec).</div></div>
+    <div class="tli mus"><div class="tly">13 Jun 2023</div><div class="tlt"><b>Master plan revealed</b>: 51M sqm, two hills, 53.5 km coast, 2.25M sqm park, 220 km cycle network. Surf “end 2023”, Velodrome “2025”. Kelly Slater partnership two days later.</div></div>
+    <div class="tli"><div class="tly">2023–24</div><div class="tlt">ADQ + IHC fold Modon into ADX-listed Q Holding (AED 25.6B convertibles); completed 27 Feb 2024; renamed <b>Modon Holding</b> 18 Mar 2024.</div></div>
+    <div class="tli mus"><div class="tly">15 Mar 2024</div><div class="tlt"><b>First residential launch — Nawayef (West Hill) + Al Naseem.</b> Freehold, all nationalities. No price in the press release.</div></div>
+    <div class="tli"><div class="tly">Oct–Dec 2024</div><div class="tlt"><b>Surf Abu Dhabi opens</b> (~10 months late). Nawayef East launches 7 Nov “from AED 6.6M”. Park Views apartments 10 Dec “from AED 2M”.</div></div>
+    <div class="tli"><div class="tly">2025</div><div class="tlt">WSL Championship Tour, Feb. <b>Nawayef Village sells out same day (May, AED 2B). Wadeem plots sell out in 72 h (Jul, AED 5.5B). Bashayer sells out in one day (Dec, AED 3B).</b> L’imad (Abu Dhabi Govt) takes 84.76% of Modon, 30 Oct. AED 5B contract for 735 Nawayef villas, 19 Dec.</div></div>
+    <div class="tli mus"><div class="tly">2026</div><div class="tlt">ADREC: #1 area Q1 (AED 11.97B) and H1 (AED 19B). <b>Golf Estates: 1,700 homes, AED 13B+ in days — UAE record (Jul).</b> ADIB 75% off-plan mortgage for future launches. Bashayer final 300 units in a day. Tunnel PPP to Mussafah at advisory tender. WSL drops 2026 stop (Sep). Velodrome due Dec.</div></div>
+  </div>
+</div>
+</section>
+
+<section id="zones" class="rev">
+  <div class="shead"><span class="snum">03</span><h2>One developer, nine communities</h2></div>
+<div class="sbody">
+  <p>Unlike Saadiyat there is no developer map to learn: <b>everything is Modon</b> (registry SPV “Hudayriyat Development LLC”). Learn the geography instead.</p>
+  <div class="rows">
+    <div class="row"><div class="k">Leisure District</div><div class="v">North-west shore: Marsana beach + 40+ F&amp;B + 40-berth marina, 321 Sports (Mouratoglou tennis), OCR Park, Circuit X, Bab Al Nojoum glamping.<span class="who">Open since Nov 2020</span></div></div>
+    <div class="row"><div class="k">Surf Abu Dhabi</div><div class="v">Kelly Slater Wave Co pool, the world’s largest. Hosted the Middle East’s first WSL Championship Tour event, Feb 2025.<span class="who">Open Oct 2024</span></div></div>
+    <div class="row"><div class="k">Velodrome</div><div class="v">250 m UCI Class 1 indoor track, 3,500 seats, 600 m rooftop cycle circuit.<span class="who">Not open — Dec 2026 target (was 2025)</span></div></div>
+    <div class="row"><div class="k">Nawayef West Hill</div><div class="v">Villas and mansions on a 45–55 m man-made hill, Newport Hills-inspired. Homes / Heights / Mansions collections.<span class="who">Launched Mar 2024 · under construction</span></div></div>
+    <div class="row"><div class="k">Nawayef East Hill</div><div class="v">The higher hill (55–60 m). Homes from 6.6M, Heights from 19.3M, Mansions still “TBC”.<span class="who">Launched Nov 2024 · Dec 2028</span></div></div>
+    <div class="row"><div class="k">Nawayef Village + Park Views</div><div class="v">The valley between the hills: 378 Tuscan townhouses, 184 low-rise apartments, retail avenue, boutique cinema, boutique hotel.<span class="who">Village Q1 2029 · Park Views Q1 2028</span></div></div>
+    <div class="row"><div class="k">Al Naseem</div><div class="v">Low-density 4–6BR villas at the base of the hills, canal side, country club. The <b>first handover on the island</b>.<span class="who">Launched Mar 2024 · Q4 2027 (was Q4 2026)</span></div></div>
+    <div class="row"><div class="k">Wadeem</div><div class="v">1,764 self-build villa plots opposite Al Bateen — “first new land this close to the city in 15 years”. School, mosque, 16-ha park.<span class="who">Sold out Jul 2025 · plots ⚠ Q4 2028</span></div></div>
+    <div class="row"><div class="k">Bashayer</div><div class="v">North-shore waterfront facing the Abu Dhabi skyline: 157 villas + 630 apartments + townhomes, 3.5 km promenade.<span class="who">Sold out Dec 2025 + Jul 2026 · 2030</span></div></div>
+    <div class="row"><div class="k">Golf Estates</div><div class="v">18-hole, 95 ha Lobb + Partners course; Andalusian townhomes to golf mansions; school, clubhouse.<span class="who">Launched Jul 2026 · Aug 2030</span></div></div>
+    <div class="row"><div class="k">Yamm Beach Villas</div><div class="v">15 ultra-luxury 6BR beachfront villas — never press-released; 7 registered at AED 68–70M in 2026 ⚠.<span class="who">Selling 2026</span></div></div>
+    <div class="row"><div class="k">Still to come</div><div class="v">Nawayef East Mansions, Naseem Promenade plots, Hudayriyat Quays, 2.25M sqm urban park, Olympia Resort.<span class="who">Named, not launched</span></div></div>
+  </div>
+  <div class="note"><b>Never published by Modon:</b> total investment value, target population (brokers say “30,000” — unsourced), total homes, any hotel brand beyond its own, any school operator, a ferris wheel, a rail link.</div>
+</div>
+</section>
+
+<section id="anchors" class="rev">
+  <div class="shead"><span class="snum">04</span><h2>Anchors &amp; the delivery record</h2></div>
+<div class="sbody">
+  <p>Client asks “do they deliver?” — this is the honest answer, promised date versus actual:</p>
+  <div class="tscroll"><table>
+    <tr><th>Anchor</th><th>Promised</th><th>Actual</th><th>Verdict</th></tr>
+    <tr><td>Bridge</td><td>2009 contract</td><td>2012</td><td class="up">6 months early</td></tr>
+    <tr><td>Leisure District</td><td>“next month” Oct 2020</td><td>10 Nov 2020</td><td class="up">On time</td></tr>
+    <tr><td>Surf Abu Dhabi</td><td>end 2023</td><td>Oct 2024</td><td class="down">~10 months late</td></tr>
+    <tr><td>Mouratoglou Tennis</td><td>—</td><td>Jun 2025</td><td class="up">Delivered</td></tr>
+    <tr><td>Velodrome</td><td>2025 → Oct 2026</td><td>Dec 2026 target</td><td class="down">12+ months, still moving</td></tr>
+    <tr><td>Olympia Resort</td><td>early 2026</td><td>“coming soon” Aug 2026</td><td class="down">6+ months late</td></tr>
+    <tr><td>Al Naseem handover</td><td>Q4 2026</td><td>Q4 2027 (Modon page)</td><td class="down">Slipped a year before due</td></tr>
+    <tr><td>Bashayer handover</td><td>Q3 2028</td><td>Q1–Q2 2030</td><td class="down">~1.5 yrs before due</td></tr>
+  </table></div>
+  <div class="dark">
+    <div class="d">The pattern</div>
+    <div class="n">Leisure gets built. Headline anchors slip 6–18 months. No home has been handed over yet.</div>
+    <div class="c">Modon’s off-plan record on this island is <b>untested</b>. Its balance sheet is not the worry — H1 2026 profit AED 2.2B, cash AED 8.6B, backlog AED 65.4B. Precedent to know: Modon’s Reem Hills had delivered zero homes 19 months past its Jan 2025 dates ⚠.</div>
+  </div>
+  <h3>The one-bridge problem</h3>
+  <p>About <b>4,000+ sold homes and plots</b> hand over 2027–2030 onto a single six-lane bridge from Al Bateen. Second access is only at tender: two DMT bridges (bids Jan–Feb 2026, no award found) and <b>twin underwater tunnels + a 4.8 km highway to Mussafah</b> (PPP advisory tender, Jun 2026). Bus 73 runs Reem–Hudayriyat. No ferry, no rail. Sell the tunnels as intent with no date.</p>
+</div>
+</section>
+
+<section id="census" class="rev">
+  <div class="shead"><span class="snum">05</span><h2>Every launch, with the developer price</h2></div>
+<div class="sbody">
+  <p>Chronological. Price tag = how solid the developer figure is: <span class="st hi">HIGH</span> Modon press release or Modon page captured at launch · <span class="st md">MED</span> Modon page captured months later · <span class="st lo">BROKER</span> Modon never printed it. <span class="flag">⚠</span> = verify before writing to a client.</p>
+
+  <div class="era">2024 · The first freehold year</div>
+  <div class="ci"><div class="l1"><span class="nm">Nawayef West — Homes / Heights / Mansions</span><span class="yr">15 Mar 2024</span></div><div class="l2">19 villa types 350–2,700 sqm; 3–8BR · <b>Price: not found in any Modon source</b> · brokers “6M / 19–20M / 41M”, 40/60 <span class="st lo">BROKER</span> · handover not on Modon’s page; AED 5B build contract only awarded Dec 2025, so “Q4 2026” is not credible</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Al Naseem Community</span><span class="yr">15 Mar 2024</span></div><div class="l2">4–6BR G+1 villas, BUA 490–620 sqm on 750–930 sqm plots; country club · <b>4BR from AED 7.8M</b> <span class="st md">MED</span> (225 registry sales at exactly 7,824,194) · 5BR 9M · 6BR 10M · 40/60 · <b>Q4 2027</b> (was Q4 2026) · AED 4.3B registered H1 2026 — #1 project in Abu Dhabi</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Nawayef East — Homes / Heights</span><span class="yr">7 Nov 2024</span></div><div class="l2">Homes 4–5BR 370–468 sqm; Heights 5–7BR 1,197–1,952 sqm · <b>“prices starting from AED 6.6 million”</b> (PR) · Heights from 19.3M <span class="st hi">HIGH</span> · Mansions 6–8BR <b>“TBC”</b> to this day · 40/60 · <b>Dec 2028</b></div></div>
+  <div class="ci"><div class="l1"><span class="nm">Nawayef Park Views</span><span class="yr">10 Dec 2024</span></div><div class="l2">First apartments: 1–4BR low-rise, 184 units · <b>“prices starting from AED 2 million”</b> (PR) <span class="st hi">HIGH</span> · 60/40 · <b>Q1 2028</b> · ⚠ brokers report sold out</div></div>
+
+  <div class="era">2025 · The sell-out year</div>
+  <div class="ci"><div class="l1"><span class="nm">Nawayef Village</span><span class="yr">6 May 2025</span></div><div class="l2">First townhouses: 3–4BR + 5BR twin villas, 378 units, Tuscan · <b>from AED 4.1M</b> <span class="st hi">HIGH</span> · 50/50 · <b>Q1 2029</b> · <b>sold out same day, ~AED 2B</b> (≈5.3M average)</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Wadeem</span><span class="yr">1 Jul 2025</span></div><div class="l2">First plots: 1,764 for 4–6BR self-build villas, ~6,450–9,650+ sqft, all nationalities · <b>Price: not found</b> · brokers “from 3.2M” <span class="st lo">BROKER</span>; registry 212 plots at exactly 3,599,400 = AED 418/sqft · <b>sold out in 72 h, AED 5.5B</b> · plots ⚠ Q4 2028</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Yamm Beach Villas</span><span class="yr">2025–26 <span class="flag">⚠</span></span></div><div class="l2">15 × 6BR three-level beachfront villas, ~2,259 sqm · never press-released; PF “from 50M” <span class="st lo">BROKER</span> · 7 registered at <b>AED 68–70M</b>, Jan–Apr 2026 ⚠ · handover not announced</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Bashayer — Phase 1</span><span class="yr">8 Dec 2025</span></div><div class="l2">First waterfront: 157 villas 4–5BR 365–590 sqm + 330 apartments 1–3BR + 4BR penthouses · <b>villas from AED 7.2M · 1BR average 2.35M</b> (Modon page, 4 days pre-launch) <span class="st hi">HIGH</span> · 50/50 · villas <b>Q1 2030</b>, apts Q2 2030 (was Q3 2028) · <b>sold out in one day, AED 3B</b></div></div>
+
+  <div class="era">2026 · The record year</div>
+  <div class="ci"><div class="l1"><span class="nm">Bashayer Residences 3 &amp; 4</span><span class="yr">~Apr 2026 <span class="flag">⚠</span></span></div><div class="l2">330 apartments, no press release · PF “launch 2.4M”; registry AED 2,335/sqft <span class="st lo">BROKER</span> · ⚠ Q3 2029 · brokers: “Buildings 1–4 sold out”</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Hudayriyat Golf Estates</span><span class="yr">late Jun / Jul 2026</span></div><div class="l2">Townhomes, Par-3/Par-4 villas, golf homes, range &amp; fairway villas, mansions; Andalusian · Modon publishes <b>averages, not “from”</b>: 3BR TH 204 sqm <b>4.2M</b> · 4BR TH 4.9M · Par-3 4.9M · Par-4 6.6M · 4BR Golf Home 7.4M · 5BR Range 10.3M · 6BR Fairway 26.8M · Golf Mansion 1,150 sqm 35.8M <span class="st hi">HIGH</span> · 40/60, 5% reservation, resale after 20% paid · <b>Aug 2030</b> · <b>1,700 sold, AED 13B+ in days — UAE record</b>; 15% non-resident, 81% new to Modon</div></div>
+  <div class="ci"><div class="l1"><span class="nm">Bashayer — Final Phase</span><span class="yr">16 Jul 2026</span></div><div class="l2">Buildings 5 &amp; 6: 1–3BR apts 81–299 sqm, 4BR penthouses, first 2BR &amp; 4BR townhomes · <b>1BR from AED 2.5M</b> · averages 2BR 3.15M · 3BR 4.6M · 2BR TH 4.3M · 4BR TH 6.2M <span class="st hi">HIGH</span> · 50/50 (5/45/50) · <b>Q2 2030</b> · <b>300 sold in one day, ~AED 1.25B</b></div></div>
+
+  <div class="note"><b>Does not exist:</b> “Marsana residences” (Marsana is the beach), marina or branded residences, UAE-nationals-only plots, “Al Naseem Villas A/B/C”. <b>Not Hudayriyat:</b> Modon’s Maysan, Muheira and Tara Park are on Reem; Bab Al Nojoum Bateen Liwa is in Al Dhafra; Fahid and Jubail are other islands.</div>
+</div>
+</section>
+
+<section id="prices" class="rev">
+  <div class="shead"><span class="snum">06</span><h2>Prices today</h2></div>
+<div class="sbody">
+  <p>Asking (Bayut/PF, 14 Sep 2026) against the developer figure. Read the pattern: <b>most asks sit 0–15% over launch; several list at original price; two communities ask below it.</b></p>
+  <div class="tscroll"><table>
+    <tr><th>Community</th><th>Unit</th><th>Asking</th><th>Developer</th></tr>
+    <tr><td>Al Naseem</td><td>4BR / 5BR / 6BR</td><td><span class="num">7.77–9.5M / 9.3–10.5M / 11–11.3M</span></td><td><span class="num">7.8 / 9.0 / 10M</span> — several “at original price”</td></tr>
+    <tr><td>Nawayef East Homes</td><td>4BR / 5BR</td><td><span class="num">7.38–8.3M / 11.8–15.8M</span></td><td><span class="num">from 6.6M</span></td></tr>
+    <tr><td>Nawayef East Heights</td><td>5BR</td><td><span class="num">25.95M</span></td><td><span class="num">from 19.3M</span></td></tr>
+    <tr><td>Nawayef West Homes</td><td>4BR / 5BR</td><td><span class="num">7.5–14.6M / 14.6–29M</span></td><td>⚠ <span class="num">6.0M / 19–20M</span> broker</td></tr>
+    <tr><td>Nawayef West Mansions</td><td>7BR</td><td><span class="num">39.5M</span></td><td>⚠ <span class="num">41M</span> broker — <span class="down">asking below</span></td></tr>
+    <tr><td>Nawayef Village</td><td>3BR / 4BR TH</td><td><span class="num">4.4–4.9M / 4.9–5.46M</span></td><td><span class="num">from 4.1M</span></td></tr>
+    <tr><td>Park Views</td><td>2BR</td><td><span class="num">3.2–3.45M</span></td><td><span class="num">from 2M (1BR)</span></td></tr>
+    <tr><td>Bashayer Residences</td><td>1BR / 2BR / 3BR</td><td><span class="num">2.3–2.9M / 3.0–4.33M / 4.4–5.13M</span></td><td>avg <span class="num">2.5 / 3.15 / 4.6M</span></td></tr>
+    <tr><td>Bashayer Villas</td><td>4BR</td><td><span class="num">6.65–7.31M</span></td><td><span class="num">7.2M</span> — <span class="down">at / below</span></td></tr>
+    <tr><td>Wadeem plots</td><td>6.5–7.6k sqft</td><td><span class="num">3.1–3.99M</span></td><td>registry <span class="num">418/sqft</span></td></tr>
+    <tr><td>Golf Estates</td><td>4BR Golf Home / Mansion</td><td><span class="num">7.7M / 40M</span></td><td>avg <span class="num">7.4M / 35.8M</span></td></tr>
+  </table></div>
+  <h3>Registered prices (ADREC, AED ’000 per sqm)</h3>
+  <div class="tscroll"><table>
+    <tr><th>Project</th><th>2025</th><th>H1 2026</th></tr>
+    <tr><td>Nawayef East</td><td><span class="num">18–20k</span></td><td><span class="num">21–26k</span></td></tr>
+    <tr><td>Nawayef West</td><td><span class="num">15–18k</span></td><td><span class="num">18–20k</span></td></tr>
+    <tr><td>Bashayer Villas</td><td><span class="num">18k</span></td><td><span class="num">21–23k</span></td></tr>
+    <tr><td>Bashayer Residences</td><td>—</td><td><span class="num">23–25k</span></td></tr>
+    <tr><td>Park Views</td><td><span class="num">19k</span></td><td><span class="num">20k</span></td></tr>
+    <tr><td>Al Naseem</td><td><span class="num">12k</span></td><td><span class="num">13k</span></td></tr>
+    <tr><td>Yamm Beach Villas</td><td>—</td><td><span class="num">30k</span></td></tr>
+    <tr><td><i>Saadiyat villas (Knight Frank)</i></td><td>—</td><td><span class="num">~26.5k</span></td></tr>
+  </table></div>
+  <div class="note"><b>Say it precisely:</b> these are averages of mostly primary sales in different phases, not a like-for-like index. Hudayriyat is cheaper per sqm than Saadiyat everywhere except Yamm. Quote the basis and you sound like the analyst in the room.</div>
+</div>
+</section>
+
+<section id="growth" class="rev">
+  <div class="shead"><span class="snum">07</span><h2>How much prices actually appreciated</h2></div>
+<div class="sbody">
+  <p>Every claim below comes from a rebuild of the ADREC register (Oct 2024 – Aug 2026) by one analyst <span class="flag">⚠</span>, consistent with ADREC’s own H1 2026 report and with the zero rental listings.</p>
+  <div class="bignum">
+    <div class="bn"><div class="n">232</div><div class="l">Registered resales out of 5,134 deals — 4.5%</div></div>
+    <div class="bn"><div class="n">+2.67%</div><div class="l">Median gross premium over developer price</div></div>
+    <div class="bn"><div class="n">−6.8%</div><div class="l">Median seller outcome after 2% transfer + 2% agency</div></div>
+    <div class="bn"><div class="n">+7.5%</div><div class="l">Like-for-like appreciation in 22 months</div></div>
+  </div>
+  <div class="tscroll"><table>
+    <tr><th>Measure</th><th>Finding</th></tr>
+    <tr><td>Asking vs achieved</td><td>Sellers ask <span class="num">+9.9%</span> median, register <span class="num">+2.67%</span>. Wadeem: ask +18.3%, achieve +8.4%.</td></tr>
+    <tr><td>Exits at cost</td><td><span class="num">24.6%</span> of resales registered at the developer’s own price (Yas 11%, Zayed City 3.5%).</td></tr>
+    <tr><td>Hold period</td><td>Median <span class="num">192 days</span> — the fastest flip market in Abu Dhabi.</td></tr>
+    <tr><td>Bashayer Residences</td><td>108 live resale listings, <b>0</b> registered resales.</td></tr>
+    <tr><td>Bayut index (Sep 2026) ⚠</td><td>Island <span class="up">+15%</span> y/y · apartments <span class="up">+28%</span> · villas flat · Nawayef West <span class="up">+20%</span> · Al Naseem <span class="down">−8%</span> · Village <span class="down">−9%</span>/6m</td></tr>
+    <tr><td>C&amp;W Core Q1 2026 ⚠</td><td>Hudayriyat villas <span class="up">+27%</span> y/y — different method; conflicts with the above</td></tr>
+    <tr><td>Rents / yields</td><td><b>Zero</b> rental listings, zero leases. Broker “6–8%” is a projection; a sober model gives 1.4–2.8% for villas ⚠.</td></tr>
+  </table></div>
+  <div class="note"><b>The honest read:</b> the island has been <b>repriced by Modon between batches</b> (Bashayer 1BR 2.35M → 2.5M on a smaller unit; Al Naseem 5–6BR +1%), not appreciated by the market. If a deal only works on launch-to-handover gains, it is a trade, not an investment — say so. Then show them the Golf Estates resale rule: allowed only after 20% is paid.</div>
+</div>
+</section>
+
+<section id="future" class="rev">
+  <div class="shead"><span class="snum">08</span><h2>What’s coming</h2></div>
+<div class="sbody">
+  <div class="rows">
+    <div class="row"><div class="k">Dec 2026</div><div class="v">Velodrome Abu Dhabi opens with SIXDAYS (11–13 Dec) — if it holds. Olympia Resort, Modon’s own active-lifestyle hotel (⚠ 181 keys), still “coming soon”.</div></div>
+    <div class="row"><div class="k">Next launches</div><div class="v">Nawayef East Mansions (6–8BR, price “TBC”) · Naseem Promenade plots · Hudayriyat Quays (⚠ 134 villas, north shore) · anything covered by the new <b>ADIB 75% off-plan mortgage</b> — Modon is taking registrations of interest.</div></div>
+    <div class="row"><div class="k">Q4 2027</div><div class="v">Al Naseem — first handover on the island. The real test begins: rents, yields, resale depth.</div></div>
+    <div class="row"><div class="k">2028–29</div><div class="v">Park Views (Q1 2028) → Nawayef East (Dec 2028) → Wadeem plots (⚠ Q4 2028) → Nawayef Village (Q1 2029). Nawayef Retail Avenue, cinema, boutique hotel, schools (no operator named).</div></div>
+    <div class="row"><div class="k">2030</div><div class="v">Bashayer (Q1–Q2) and Golf Estates (Aug) — ~2,900 homes in one year, onto whatever bridges exist by then.</div></div>
+    <div class="row"><div class="k">Undated</div><div class="v">Two DMT bridges (tendered), East tunnels + highway to Mussafah (PPP), 2.25M sqm urban park, remaining ~190 km of the cycle network.</div></div>
+  </div>
+  <h3>Supply context (ADREC, official)</h3>
+  <p>Hudayriyat pipeline <b>3,477 units H1 2026–2030</b> (866 apartments, 2,611 villas), up from 2,776 a year earlier. Six districts including Hudayriyat make up 77% of Abu Dhabi’s supply growth to 2030; emirate deliveries peak in 2028. Q2 2026 was the first city-wide quarterly dip since 2021 (−1%, C&amp;W Core) after the March conflict shock — a cooling year, not a crash.</p>
+</div>
+</section>
+
+<section id="sell" class="rev">
+  <div class="shead"><span class="snum">09</span><h2>Sell it right</h2></div>
+<div class="sbody">
+  <div class="angle"><div class="t">Lead with the government developer</div><div class="b">“The island is owned and built by Modon — 84.76% held by the Abu Dhabi Government since October 2025, AED 65B revenue backlog, AED 8.6B cash.” Verifiable on ADX. The delivery question then becomes about schedule, not survival.</div></div>
+  <div class="angle"><div class="t">Sell the payment plan and the dated sell-outs</div><div class="b">40/60 on the hills, 50/50 on Village and Bashayer, 5% to reserve at Golf Estates. Then the record: Village same day, Wadeem 72 hours, Bashayer one day, Golf Estates AED 13B+ in days. All Modon-stated, all dated.</div></div>
+  <div class="angle"><div class="t">Budget the slip out loud</div><div class="b">“Al Naseem moved from Q4 2026 to Q4 2027. Plan for 2028.” Volunteering it converts the sceptic and survives the SPA stage. Then point to what did open: Surf, tennis, Marsana.</div></div>
+  <div class="angle"><div class="t">Know the protections cold</div><div class="b">ADREC project escrow · <b>2% transfer fee vs Dubai’s 4%</b> · freehold for all nationalities · Golden Visa at AED 2M · Modon–ADIB up to 75% off-plan financing for future launches (15% during build, 5–10% at handover).</div></div>
+  <div class="angle"><div class="t">Match the buyer</div><div class="b">Hudayriyat = end-user lifestyle (surf, cycling, ten minutes from Al Bateen) + early-cycle entry below Saadiyat prices. A yield client belongs on Reem (6–8% apartments). A “flip before handover” client needs to hear 2.67% and 192 days.</div></div>
+  <div class="angle"><div class="t">Quote prices with their pedigree</div><div class="b">“Modon’s page says from 6.6M” is a fact. “Nawayef West launched at 6M” is a broker sentence Modon never wrote. The register shows 225 Al Naseem villas at exactly 7,824,194 — that is what a real launch price looks like.</div></div>
+  <div class="redbox">
+    <h3>Never say</h3>
+    <ul>
+      <li><b>“30–50% appreciation since launch.”</b> The register says +2.67% median; the like-for-like series says +7.5% in 22 months.</li>
+      <li><b>“6–8% rental yield.”</b> Nothing is built; there are zero leases. Any yield is a projection.</li>
+      <li><b>“Handover next year.”</b> The earliest key on the island is Q4 2027 and it has moved once already.</li>
+      <li><b>“Modon launched Nawayef West at 6M / Wadeem at 3.2M.”</b> Modon never printed either number.</li>
+      <li><b>“Marsana residences” / “Anantara Hudayriyat” / “30,000 residents.”</b> None is in a Modon source.</li>
+      <li><b>“Ten minutes to the Corniche.”</b> Modon’s own claim is 11 km / ~10 min to Hamdan Street, 15–20 min to the centre — one bridge, at rush hour.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<section id="quiz" class="rev">
+  <div class="shead"><span class="snum">10</span><h2>Test yourself</h2></div>
+<div class="sbody">
+  <p>If you can answer these cold, you’re the Hudayriyat expert in the room. Tap to check.</p>
+  <div class="q"><button type="button">When did homes first go on sale on Hudayriyat, and what launched?</button><div class="a"><b>15 March 2024</b> — Nawayef (West Hill) and Al Naseem, together, freehold for all nationalities. Before that the island was leisure only (district opened 10 Nov 2020).</div></div>
+  <div class="q"><button type="button">Who owns Modon, and why does it matter?</button><div class="a"><b>L’imad Holding, wholly owned by the Abu Dhabi Government, holds 84.76%</b> since 30 Oct 2025 (bought out IHC and ADQ). The island is described as “owned and developed by Modon Holding” — so the developer question is about schedule, not solvency.</div></div>
+  <div class="q"><button type="button">Which launch prices did Modon actually put in a press release?</button><div class="a">Only two: <b>Nawayef East “from AED 6.6 million”</b> (Nov 2024) and <b>Park Views “from AED 2 million”</b> (Dec 2024). Everything else comes from Modon’s project pages (Village 4.1M, Bashayer 7.2M / 2.35M / 2.5M, Golf Estates averages) — or from brokers (Nawayef West, Wadeem).</div></div>
+  <div class="q"><button type="button">A client says a friend made 40% flipping a Bashayer unit. What do you say?</button><div class="a">Bashayer Residences has <b>108 live resale listings and zero registered resales</b>. Island-wide, 232 resales registered at a median <b>+2.67%</b>; the median seller lost 6.8% after fees. Ask for the ADREC transfer record.</div></div>
+  <div class="q"><button type="button">When is the first handover, and what did it used to be?</button><div class="a"><b>Al Naseem, Q4 2027</b> on Modon’s project page — marketed at Q4 2026 in 2024 and still Q4 2026 in Modon’s own island FAQ. The AED 5B main construction contract for the Nawayef hills was only awarded 19 Dec 2025.</div></div>
+  <div class="q"><button type="button">What is the Golf Estates record, exactly?</button><div class="a"><b>More than AED 13 billion, 1,700 residences, within days</b> of the late-June / early-July 2026 launch — “the highest publicly recorded sales value for a single residential project launch in the UAE” (Modon PR, 7 Jul 2026). 15% non-UAE-resident buyers, 81% new to Modon. Handover Aug 2030.</div></div>
+  <div class="q"><button type="button">How do you get to the island, today and tomorrow?</button><div class="a">Today: <b>one six-lane bridge</b> from Al Bateen (2012) plus bus 73. Tomorrow: two DMT bridges (tender, no award) and <b>twin underwater tunnels + 4.8 km highway to Mussafah</b> (PPP advisory tender, Jun 2026). No dates. No ferry, no rail.</div></div>
+  <div class="q"><button type="button">Name three “Hudayriyat” claims that are false.</button><div class="a">“Marsana residences” (Marsana is a beach); “Anantara Hudayriyat” (no announcement exists); “Modon’s Tara Park / Maysan on Hudayriyat” (they are on <b>Reem</b>). Bonus: Bab Al Nojoum Bateen Liwa is in Al Dhafra.</div></div>
+</div>
+</section>
+
+<div class="foot">
+  <b>PSIai · internal agent training — not client-facing.</b><br>
+  Compiled 14 Sep 2026 from Modon press releases and project pages (Wayback-dated), ADX filings, ADREC reports 2025 / H1 2026, Abu Dhabi Media Office, WAM, The National, Gulf News, Khaleej Times, MEED, Property Finder and Bayut listings, and one analyst’s rebuild of the ADREC register (marked ⚠). Asking prices ≠ transaction prices. Items marked ⚠ are single-sourced or conflicting — verify against the Modon sales desk before putting them in writing. Full sourced dossier: ask Jad.
+</div>
+
+</div>
+
+<script>
+'use strict';
+(function(){
+  var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+  },{rootMargin:'0px 0px -8% 0px'}):null;
+  document.querySelectorAll('.rev').forEach(function(el){io?io.observe(el):el.classList.add('on');});
+  setTimeout(function(){document.querySelectorAll('.rev:not(.on)').forEach(function(el){el.classList.add('on');});},2200);
+
+  document.querySelectorAll('.q button').forEach(function(b){
+    b.addEventListener('click',function(){b.parentNode.classList.toggle('open');});
+  });
+
+  function openSection(id){
+    var s=document.getElementById(id);
+    if(!s||s.classList.contains('open')) return;
+    s.classList.add('open');
+    if(window.gtag) gtag('event','section_open',{section:id});
+  }
+  document.querySelectorAll('section .shead').forEach(function(sh){
+    sh.addEventListener('click',function(){
+      var s=sh.closest('section');
+      if(s.classList.contains('open')){ s.classList.remove('open'); }
+      else{ openSection(s.id); }
+    });
+  });
+  document.querySelectorAll('.chnav a').forEach(function(a){
+    a.addEventListener('click',function(){ openSection(a.getAttribute('href').slice(1)); });
+  });
+  if(location.hash){ openSection(location.hash.slice(1)); }
+})();
+</script>
+</body>
+</html>

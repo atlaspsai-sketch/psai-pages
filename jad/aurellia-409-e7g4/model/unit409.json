@@ -1,0 +1,223 @@
+{
+ "unit": "AUREL1A Residence 409 - 2 BR Type E_2",
+ "units": "metres",
+ "up": "+Y",
+ "origin": "unit floor centre (footprint bbox centre incl. balcony), finished floor level y=0",
+ "ceiling_height_m": 3.0,
+ "material": "KHR_materials_unlit on all baked meshes -> GLTFLoader gives MeshBasicMaterial with the baked atlas as map (sRGB). Use renderer.toneMapping = NoToneMapping and outputColorSpace = SRGBColorSpace. Glass: unlit, alpha 0.16 (BLEND).",
+ "north": {
+  "bearing_deg_clockwise_from_plan_up": 45.0,
+  "vector_xz": [
+   0.7071,
+   -0.7071
+  ],
+  "node": "north (node position points to true north from the origin; node local -Z also points north)",
+  "balcony_faces": "south-east (bearing ~135 deg)"
+ },
+ "bbox": {
+  "min": [
+   -6.35,
+   -0.28,
+   -5.774
+  ],
+  "max": [
+   6.332,
+   3.0,
+   5.774
+  ],
+  "size": [
+   12.682,
+   3.28,
+   11.547
+  ]
+ },
+ "stages": [
+  {
+   "node": "stage_1_slab",
+   "index": 1,
+   "children": [
+    "slab_balcony",
+    "slab_interior"
+   ]
+  },
+  {
+   "node": "stage_2_walls",
+   "index": 2,
+   "children": [
+    "walls_cut",
+    "walls_main"
+   ]
+  },
+  {
+   "node": "stage_3_glazing",
+   "index": 3,
+   "children": [
+    "balustrade_glass",
+    "doors",
+    "frames",
+    "glass"
+   ]
+  },
+  {
+   "node": "stage_4_fitout",
+   "index": 4,
+   "children": [
+    "bathrooms",
+    "kitchen",
+    "wall_panels",
+    "wardrobes"
+   ]
+  },
+  {
+   "node": "stage_5_furniture",
+   "index": 5,
+   "children": [
+    "bed1_furniture",
+    "bed2_furniture",
+    "dining_furniture",
+    "living_furniture",
+    "rugs"
+   ]
+  },
+  {
+   "node": "stage_6_life",
+   "index": 6,
+   "children": [
+    "balcony_furniture",
+    "decor",
+    "lamps",
+    "plants"
+   ]
+  }
+ ],
+ "cutaway_node": "walls_cut (child of stage_2_walls): balcony-side + south-west exterior walls",
+ "rooms": [
+  {
+   "id": "room_balcony",
+   "label": "Balcony",
+   "w_mm": 9750,
+   "d_mm": 1700,
+   "area_m2": 16.57,
+   "x": 0.876,
+   "z": 4.919
+  },
+  {
+   "id": "room_bath1",
+   "label": "Ensuite bathroom 1",
+   "w_mm": 1800,
+   "d_mm": 2850,
+   "area_m2": 5.13,
+   "x": -0.87,
+   "z": -2.93
+  },
+  {
+   "id": "room_bath2",
+   "label": "Ensuite bathroom 2",
+   "w_mm": 1900,
+   "d_mm": 2700,
+   "area_m2": 5.13,
+   "x": 1.029,
+   "z": 2.457
+  },
+  {
+   "id": "room_bed1",
+   "label": "Bedroom 1",
+   "w_mm": 3600,
+   "d_mm": 4050,
+   "area_m2": 14.58,
+   "x": -4.274,
+   "z": -2.332
+  },
+  {
+   "id": "room_bed2",
+   "label": "Bedroom 2",
+   "w_mm": 3750,
+   "d_mm": 3650,
+   "area_m2": 13.69,
+   "x": -2.497,
+   "z": 1.643
+  },
+  {
+   "id": "room_dining",
+   "label": "Dining",
+   "w_mm": 2400,
+   "d_mm": 2100,
+   "area_m2": 5.04,
+   "x": 3.931,
+   "z": -1.976
+  },
+  {
+   "id": "room_entry",
+   "label": "Entrance",
+   "w_mm": 1500,
+   "d_mm": 2000,
+   "area_m2": 3.0,
+   "x": 5.34,
+   "z": -4.548
+  },
+  {
+   "id": "room_kitchen",
+   "label": "Kitchen",
+   "w_mm": 3050,
+   "d_mm": 2850,
+   "area_m2": 8.69,
+   "x": 3.068,
+   "z": -2.93
+  },
+  {
+   "id": "room_living",
+   "label": "Living",
+   "w_mm": 4000,
+   "d_mm": 4850,
+   "area_m2": 19.4,
+   "x": 4.087,
+   "z": 1.512
+  },
+  {
+   "id": "room_store",
+   "label": "Store",
+   "w_mm": 800,
+   "d_mm": 1200,
+   "area_m2": 0.96,
+   "x": 1.581,
+   "z": 0.399
+  },
+  {
+   "id": "room_toilet",
+   "label": "Guest toilet + laundry",
+   "w_mm": 1300,
+   "d_mm": 2850,
+   "area_m2": 3.71,
+   "x": 0.786,
+   "z": -2.93
+  }
+ ],
+ "camera_default": {
+  "position": [
+   -9.3,
+   16.8,
+   15.1
+  ],
+  "target": [
+   0.9,
+   -0.8,
+   -0.9
+  ],
+  "fov_deg_vertical": 32.0,
+  "note": "Same as hero-dollhouse.png (render uses walls_cut hidden)."
+ },
+ "camera_top": {
+  "position": [
+   0,
+   30,
+   0
+  ],
+  "target": [
+   0,
+   0,
+   0
+  ],
+  "orthographic_height_m": 13.2
+ },
+ "source": "Developer unit sheet src/unit409-plan-1.png; plan scale calibrated at 6.235 mm/px (300 dpi render)."
+}
